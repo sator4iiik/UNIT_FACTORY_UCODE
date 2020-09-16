@@ -1,3 +1,6 @@
 [submodule "Marathon_C/Sprint00"]
 	path = Marathon_C/Sprint00
 	url = https://github.com/sator4iiik/Sprint00
+[submodule "endgame"]
+	path = endgame
+	url = https://github.com/sator4iiik/endgame
