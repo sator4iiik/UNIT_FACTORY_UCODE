@@ -1,5 +1,5 @@
 // #include <stdio.h>
-#include <math.h>
+// #include <math.h>
 
 double mx_pow(double n, unsigned int pow) {
     double j=1;
