@@ -1,3 +1,0 @@
-git add t00/man.sh$
-git commit -m "SHIT IT WORK!"
-git push origin master$
