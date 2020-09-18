@@ -17,13 +17,13 @@ void mx_printint(int n) {
     mx_printchar(n%10 + 48);
 }
 
-int main() {
-    mx_printint(2147483647);
-    mx_printchar('\n');
-    mx_printint(-2147483648);
-    mx_printchar('\n');
-    mx_printint(0);
-    mx_printchar('\n');
-    mx_printint(-6582);
-    mx_printchar('\n');
-}
+// int main() {
+//     mx_printint(2147483647);
+//     mx_printchar('\n');
+//     mx_printint(-2147483648);
+//     mx_printchar('\n');
+//     mx_printint(0);
+//     mx_printchar('\n');
+//     mx_printint(-6582);
+//     mx_printchar('\n');
+// }
