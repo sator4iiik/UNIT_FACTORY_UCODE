@@ -4,10 +4,10 @@
 void mx_printchar(char c);
 
 void mx_printint(int n) {
-    if (n == -2147483648) {
-        write(1, "-2147483648", 12);
-        return;
-    }
+    // if (n == -2147483648) {
+    //     write(1, "-2147483648", 12);
+    //     return;
+    //}
     if (n<0) {
         n= -n;
         mx_printchar('-');
