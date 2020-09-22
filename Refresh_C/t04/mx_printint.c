@@ -1,13 +1,13 @@
-#include <stdio.h>
-#include <unistd.h>
+// #include <stdio.h>
+// #include <unistd.h>
 
 void mx_printchar(char c);
 
 void mx_printint(int n) {
-    // if (n == -2147483648) {
-    //     write(1, "-2147483648", 12);
-    //     return;
-    //}
+    if (n == -2147483648) {
+        write(1, "-2147483648", 12);
+        return;
+    }
     if (n<0) {
         n= -n;
         mx_printchar('-');
@@ -17,7 +17,7 @@ void mx_printint(int n) {
     mx_printchar(n%10 + 48);
 }
 
-// int main() {
+// int main(void) {
 //     mx_printint(2147483647);
 //     mx_printchar('\n');
 //     mx_printint(-2147483648);

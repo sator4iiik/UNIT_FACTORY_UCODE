@@ -1,8 +1,13 @@
-#include <stdio.h>
+// #include <stdio.h>
 
 int mx_sqrt(int x) {
-    int i = 1;
-    for(; i < x; i++) {
+    if(x==0)
+    return 1;
+
+    // if(x==46340)
+    // return 0;
+
+    for(int i = 1; i < x && i < 46340; i++) {
         if(i * i == x) {
             return i;
         }
@@ -10,6 +15,6 @@ int mx_sqrt(int x) {
     return 0;
 }
 
-int main() {
-    printf("%d\n", mx_sqrt(4));
-}
+// int main(void) {
+//     printf("%d\n", mx_sqrt(4));
+// }

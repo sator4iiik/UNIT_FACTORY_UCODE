@@ -9,6 +9,7 @@ double mx_pow(double n, unsigned int pow) {
     }
     return j;
 }
+
 // int main() {
 //     double h = 2.5;
 //     unsigned int l = 3;
