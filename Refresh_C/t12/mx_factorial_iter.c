@@ -12,6 +12,7 @@ int mx_factorial_iter(int n) {
     return res;
 } //дтпп н число больше 1 отнимать 1  и прод цикл
 // результат равен чсило умноженное на результат
+// вернуть результат
 // int main(void) {
 //     printf("%d\n", mx_factorial_iter(11));
 // }
