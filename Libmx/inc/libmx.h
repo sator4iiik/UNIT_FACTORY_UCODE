@@ -39,7 +39,7 @@ void mx_printint(int n);
 
 int mx_strlen(const char *s);
 void mx_swap_char(char *s1, char *s2);
-// void mx_str_reverse(char *s);
+void mx_str_reverse(char *s);
 // void mx_strdel(char **str);
 // void mx_del_strarr(char ***arr);
 // int mx_get_char_index(const char *str, char c);
@@ -47,7 +47,7 @@ void mx_swap_char(char *s1, char *s2);
 // char *mx_strndup(const char *s1, size_t n);
 // char *mx_strcpy(char *dst, const char *src);
 // char *mx_strncpy(char *dst, const char *src, int len);
-// int mx_strcmp(const char *s1, const char *s2);
+int mx_strcmp(const char *s1, const char *s2);
 // char *mx_strcat(char *restrict s1, const char *restrict s2);
 // char *mx_strstr(const char *haystack, const char *restrict s2);
 // int mx_get_substr_index(const char *str, const char *sub);
@@ -121,6 +121,7 @@ int mx_mid(int a, int b, int c);
 // int *mx_copy_int_arr(const int *src, int size);
 // void mx_pop_index(t_list **list, int index);
 // void mx_push_index(t_list **list, void *data, int index);
+void mx_str_separate(const char *str, char delim);
 void mx_isos_triangle(unsigned int length, char c);
 // void mx_strdel(char **str);
 // double mx_timer(void(*f)())
