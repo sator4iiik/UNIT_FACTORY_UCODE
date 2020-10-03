@@ -55,5 +55,4 @@ dkms.conf
 test
 .DS_Store
 ._.DS_Store
-main.c
 .vscode
