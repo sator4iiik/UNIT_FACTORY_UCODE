@@ -1,10 +1,18 @@
+<<<<<<< HEAD
 // #include "inc/libmx.h"
+=======
+#include "inc/libmx.h"
+>>>>>>> 2b81cd60d723429c2f21eab3c88b9f009e0082a0
 
 // static bool cmp_sort_list(void *a, void *b) {
 //     return (int)a > (int)b ? true : false;
 // }
 
+<<<<<<< HEAD
 // int main(/*int argc, char *argv[]*/) {
+=======
+int main(/*int argc, char *argv[]*/) {
+>>>>>>> 2b81cd60d723429c2f21eab3c88b9f009e0082a0
     // mx_printstr(" **********************\n *\tUTILS PACK    *\n **********************\n\n");
     // mx_printstr("----------------MX_PRINTCHAR-------------------\n");
     //     mx_printstr("mx_printchar 'h' | "); mx_printchar('h'); mx_printstr("\n");
@@ -34,11 +42,19 @@
     //     mx_printstr("mx_printint of 2147483647 | "); mx_printint(2147483647); mx_printstr("\n");
 
     // mx_printstr("\n\n----------------MX_POW-------------------\n");
+<<<<<<< HEAD
     //     mx_printstr("mx_pow 3, 3 is 27? | ");
     //     printf("%.0f\n", mx_pow(3, 3));
     //     mx_printstr("mx_pow 2.5, 3 is 15.625? | ");
     //     printf("%.3f\n",mx_pow(2.5, 3));
     //     mx_printstr("mx_pow 2, 0 is 1 | ");
+=======
+    //     mx_printstr("mx_pow 3, 3 is 27? | "); 
+    //     printf("%.0f\n", mx_pow(3, 3));
+    //     mx_printstr("mx_pow 2.5, 3 is 15.625? | "); 
+    //     printf("%.3f\n",mx_pow(2.5, 3));
+    //     mx_printstr("mx_pow 2, 0 is 1 | "); 
+>>>>>>> 2b81cd60d723429c2f21eab3c88b9f009e0082a0
     //     printf("%.0f\n",mx_pow(2, 0));
 
     // mx_printstr("\n\n----------------MX_SQRT-------------------\n");
@@ -143,12 +159,20 @@
     // mx_printstr("\n\n----------------MX_DEL_STRARR-------------------\n");
         // char **strarr = (char **)malloc(sizeof(char *) * 3);
         // strarr[0] = strdup("abc"); strarr[1] = strdup("xyz"); strarr[2] = NULL;
+<<<<<<< HEAD
         // mx_printstr("strarr before mx_del_strarr is abc  xyz  (null)? | "); printf("%s  %s  %s\n", strarr[0], strarr[1], strarr[2]);
+=======
+        // mx_printstr("strarr before mx_del_strarr is abc  xyz  (null)? | "); printf("%s  %s  %s\n", strarr[0], strarr[1], strarr[2]); 
+>>>>>>> 2b81cd60d723429c2f21eab3c88b9f009e0082a0
         // mx_del_strarr(&strarr);
         // mx_printstr("strarr after mx_del_strarr is (null)? | "); printf("%s\n", (char *) strarr);
 
 
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 2b81cd60d723429c2f21eab3c88b9f009e0082a0
 
     // mx_printstr("\n\n----------------MX_GET_CHAR_INDEX-------------------\n");
         // char *get_char_index = "123456789";
@@ -212,7 +236,11 @@
     //     mx_printstr("mx_count_words return \"2\"? | "); mx_printint(mx_count_words(count_words, '*')); mx_printstr("\n");
     //     mx_printstr("mx_count_words return \"5\"? | "); mx_printint(mx_count_words(count_words, ' ')); mx_printstr("\n");
     //     mx_printstr("mx_count_words return \"-1\"? (null's check) | "); mx_printint(mx_count_words(NULL, ' ')); mx_printstr("\n");
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 2b81cd60d723429c2f21eab3c88b9f009e0082a0
 
     // mx_printstr("\n\n----------------MX_STRNEW-------------------\n");
         // char *strnew = mx_strnew(5);
@@ -244,8 +272,13 @@
         // char strsplit2[] = "       Knock, knock,         Neo.         ";
         // char **splited2 = mx_strsplit(strsplit2, ' ');
         // char **splited3 = mx_strsplit(NULL, ' ');
+<<<<<<< HEAD
         // mx_printstr("mx_strsolit return is \"Good bye,\" \"Mr.\" \"Anderson.\" (null)? | "); printf("\"%s\"  \"%s\"  \"%s\" \"%s\"\n", splited[0], splited[1], splited[2], splited[3]);
         // mx_printstr("mx_strsolit return is \"Knock,\" \"knock,\" \"Neo.\" (null)? | "); printf("\"%s\"  \"%s\"  \"%s\" \"%s\"\n", splited2[0], splited2[1], splited2[2], splited2[3]);
+=======
+        // mx_printstr("mx_strsolit return is \"Good bye,\" \"Mr.\" \"Anderson.\" (null)? | "); printf("\"%s\"  \"%s\"  \"%s\" \"%s\"\n", splited[0], splited[1], splited[2], splited[3]); 
+        // mx_printstr("mx_strsolit return is \"Knock,\" \"knock,\" \"Neo.\" (null)? | "); printf("\"%s\"  \"%s\"  \"%s\" \"%s\"\n", splited2[0], splited2[1], splited2[2], splited2[3]); 
+>>>>>>> 2b81cd60d723429c2f21eab3c88b9f009e0082a0
         // mx_printstr("mx_strsolit return (null)? | "); printf("%s\n", (char *)splited3);
 
     // mx_printstr("\n\n----------------MX_STRJOIN-------------------\n");
@@ -267,6 +300,7 @@
         // }
 
     // mx_printstr("\n\n----------------MX_READ_LINE-------------------\n"); // CORRECT IT !!!!!!
+<<<<<<< HEAD
         // int fd = open("fragment", O_RDONLY);
         // char *lineptr1 = NULL;
         // int res1;
@@ -295,6 +329,36 @@
         // printf("==============================================\n");
         // close(fd);
         // mx_printstr("\n");
+=======
+        int fd = open("fragment", O_RDONLY);
+        char *lineptr1 = NULL;
+        int res1;
+        res1 = mx_read_line(&lineptr1, 20, 'f', fd);
+        printf("\nres1 = %d\nlineptr1 = %s|\n\n", res1, lineptr1);
+        printf("==============================================\n");
+        char *lineptr2 = NULL;
+        int res2;
+        res2 = mx_read_line(&lineptr2, 35, 't', fd);
+        printf("\nres2 = %d\nlineptr2 = %s|\n\n", res2, lineptr2);
+        printf("==============================================\n");
+        char *lineptr3 = NULL;
+        int res3;
+        res3 = mx_read_line(&lineptr3, 4, '.', fd);
+        printf("\nres3 = %d\nlineptr3 = %s|\n\n", res3, lineptr3);
+        printf("==============================================\n");
+        char *lineptr4 = NULL;
+        int res4;
+        res4 = mx_read_line(&lineptr4, 4, 'a', fd);
+        printf("\nres4 = %d\nlineptr4 = %s|\n\n", res4, lineptr4);
+        printf("==============================================\n");
+        char *lineptr5 = NULL;
+        int res5;
+        res5 = mx_read_line(&lineptr5, 4, 'a', fd);
+        printf("\nres5 = %d\nlineptr5 = %s|\n\n", res5, lineptr5);
+        printf("==============================================\n");
+        close(fd);
+        mx_printstr("\n");
+>>>>>>> 2b81cd60d723429c2f21eab3c88b9f009e0082a0
         // system("leaks -q a.out");
 
 // res = mx_read_line(&str, 20, 'f', fd) //res = 25, str = "The hotel was abandoned a"
@@ -333,10 +397,17 @@
         // mx_printstr("mx_replace_substr return \"(null)\"? | "); printf("%s\n", repleced4);
         // mx_printstr("mx_replace_substr return \"(null)\"? | "); printf("%s\n", repleced5);
 
+<<<<<<< HEAD
 
         // printf("%s\n", mx_replace_substr("McDonalds", "alds", "uts"));
         // printf("%s\n", mx_replace_substr("Ururu turu", "ru", "ta"));
 
+=======
+        
+        // printf("%s\n", mx_replace_substr("McDonalds", "alds", "uts"));
+        // printf("%s\n", mx_replace_substr("Ururu turu", "ru", "ta"));
+  
+>>>>>>> 2b81cd60d723429c2f21eab3c88b9f009e0082a0
 
 
     // mx_printstr(" *************************************\n *\t      MEMORY PACK\t     *\n *************************************\n");
@@ -363,8 +434,13 @@
     //     printf("mx_memccpy return the same? | %s|\n", mx_memccpy(memccpy_dest2, "54321", 'a', 8));
 
     // mx_printstr("\n----------------MX_MEMCMP-------------------\n");
+<<<<<<< HEAD
     //     char *memcmp1 = "aaaaa";
     //     char *memcmp2 = "aaaaA";
+=======
+    //     char *memcmp1 = "aaaaa"; 
+    //     char *memcmp2 = "aaaaA"; 
+>>>>>>> 2b81cd60d723429c2f21eab3c88b9f009e0082a0
     //     char *memcmp3 = "aaaaaaa";
     //     mx_printstr("memcmp \t  return   \t   | "); mx_printint(memcmp(memcmp2, memcmp1, 5));
     //     mx_printstr("|\nmx_memcmp return the same? | "); mx_printint(mx_memcmp(memcmp2, memcmp1, 5)); mx_printstr("|\n");
@@ -622,7 +698,11 @@
     //     mx_push_front(&sort_new_list, (void *) 33);
     //     mx_push_front(&sort_new_list, (void *) 1);
     //     mx_printstr("mx_sort_list return 1 2 3 4 5 13 33 43 923? | ");
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 2b81cd60d723429c2f21eab3c88b9f009e0082a0
     //     for (int i = 0; sort_new_list; i++) {
     //         mx_sort_list(sort_new_list, cmp_sort_list);
     //         int buf = (int)sort_new_list->data;
@@ -644,5 +724,11 @@
     // mx_printint(mx_atoi("9223372036854775806")); mx_printstr("\n");
     // mx_printint(atoi("9223372036854775806")); mx_printstr("\n");
 
+<<<<<<< HEAD
 //     system("leaks -q a.out");
 // }
+=======
+    system("leaks -q a.out");
+}
+
+>>>>>>> 2b81cd60d723429c2f21eab3c88b9f009e0082a0
