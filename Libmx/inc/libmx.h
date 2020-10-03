@@ -37,7 +37,7 @@ void mx_printstr(const char *s);
 
 //------STRING PACK------//
 
-// int mx_strlen(const char *s);
+int mx_strlen(const char *s);
 // void mx_swap_char(char *s1, char *s2);
 // void mx_str_reverse(char *s);
 // void mx_strdel(char **str);
@@ -92,7 +92,9 @@ void mx_printstr(const char *s);
 
 //--------ADDITIONALPACK--------//
 
-// void mx_print_alphabet(void);
+void mx_print_alphabet(void);
+void mx_hexadecimal(void);
+void mx_matrix_voice(void);
 // void mx_sort_arr_int(int *arr, int size);
 // int mx_factorial_iter(int n);
 // int mx_strncmp(const char *s1; const char *s2, int n);
@@ -100,13 +102,15 @@ void mx_printstr(const char *s);
 bool mx_isalpha(int c);
 bool mx_isdigit(int c);
 // void mx_printerr(const char *s);
-// bool mx_islower(int c);
+bool mx_islower(int c);
 bool mx_isspace(char c);
-// bool mx_isupper(int c);
+bool mx_isupper(int c);
+int mx_tolower(int c);
 // int mx_linear_search(char **arr, const char *s);
 // bool mx_is_narcissistic(int num);
 // bool mx_is_odd(int value);
-// void mx_is_positive(int i);
+void mx_only_printable(void);
+void mx_is_positive(int i);
 // bool mx_is_prime(int num);
 // int mx_max(int a, int b, int c);
 // int mx_mid(int a, int b, int c);
