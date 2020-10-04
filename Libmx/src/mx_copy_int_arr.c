@@ -1,6 +1,4 @@
-#include <stdlib.h>
-// #include <stdio.h>
-
+#include "libmx.h"
 
 int *mx_copy_int_arr(const int *src, int size){
     if(src == NULL ){
@@ -12,4 +10,3 @@ int *mx_copy_int_arr(const int *src, int size){
     }
     return newarr;
 }
-

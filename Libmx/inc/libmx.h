@@ -1,13 +1,42 @@
+
+/*//////////////////////////////////////////////////////////////////////
+ *
+ *
+ *
+ *                                      w 8
+ *          .d8b. 8d8b .d88b 888P 8d8b. w 8.dP .d8b. Yb  dP
+ *          8' .8 8P   8.dP'  dP  8P Y8 8 88b  8' .8  YbdP
+ *          `Y8P' 8    `Y88P d888 8   8 8 8 Yb `Y8P'   YP
+ *
+ *                       LIBRARY MX_FUNCTION
+ *                              2020
+ *
+ *
+ *
+ *||||||||||||||||||||||||||||||||||||||||||||||||||||||size of pe: 40k|
+ *//////////////////////////////////////////////////////////////////////
+
+
 #pragma once
 
+#include <malloc/malloc.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <stdbool.h>
+#include <string.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include <stdbool.h>
-#include <time.h>
+#include <stddef.h>
 #include <fcntl.h>
+#include <errno.h>
+#include <ctype.h>
 #include <stdio.h>
-#include <string.h>
-#include <malloc/malloc.h>
+#include <wchar.h>
+#include <math.h>
+#include <time.h>
+
+// #include <wchar.h>
+// #include <stddef.h>
 
 #define INT_MIN -2147483648
 #define LONG_MAX 9223372036854775807
@@ -32,7 +61,7 @@ typedef struct read_line {
     size_t j;
 }   r_line;
 
-//------UTILS PACK------//
+/////////-UTILS PACK-/////////
 
 void mx_printchar(char c);
 void mx_print_unicode(wchar_t c);
@@ -49,7 +78,7 @@ int mx_binary_search(char **arr, int size, const char *s, int *const);
 int mx_bubble_sort(char *arr, int size);
 // int mx_quicksort(char **arr, int left, int right);
 
-//------STRING PACK------//
+/////////-STRING PACK-/////////
 
 int mx_strlen(const char *s);
 void mx_swap_char(char *s1, char *s2);
@@ -75,12 +104,12 @@ char *mx_del_extra_spaces(const char *str);
 // char **mx_strsplit(const char *s, char c);
 char *mx_strjoin(const char *s1, const char *s2);
 // char *mx_file_to_str(const char *file);
-// int mx_read_line(char **lineptr, int buf_size, char delim, const int fd);
-// char *mx_replace_substr(const char *str, const char *sub, const char *replace);
+// int mx_read_line(char **lineptr, int buf_size, char delim,
+                                                   // const int fd);
+// char *mx_replace_substr(const char *str, const char *sub,
+                                    //    const char *replace);
 
-
-
-//------MEMORYPACK------//
+/////////-MEMORYPACK-/////////
 
 // void *mx_memset(void *b, int c, size_t len);
 // void *mx_memcpy(void *restrict dst, const void *restrict src, size_t n);
@@ -92,9 +121,7 @@ char *mx_strjoin(const char *s1, const char *s2);
 // void *mx_memmove(void *dst, const void *src, size_t len);
 // void *mx_realloc(void *ptr, size_t size);
 
-
-
-//--------LISTPACK--------//
+/////////-LISTPACK-/////////
 
 // t_list *mx_create_node(void *data);
 // void mx_push_front(t_list **list, void *data);
@@ -104,9 +131,7 @@ char *mx_strjoin(const char *s1, const char *s2);
 // int mx_list_size(t_list *list);
 // t_list *mx_sort_list(t_list *lst, bool (*cmp)(void *, void *));
 
-
-
-//--------ADDITIONALPACK--------//
+/////////-ADDITIONALPACK-/////////
 
 void mx_print_alphabet(void);
 void mx_hexadecimal(void);

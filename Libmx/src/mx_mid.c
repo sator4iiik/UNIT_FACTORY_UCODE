@@ -1,3 +1,5 @@
+#include "libmx.h"
+
 int mx_mid(int a, int b, int c) {
     int mid;
 

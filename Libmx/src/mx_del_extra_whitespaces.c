@@ -1,5 +1,4 @@
-#include <stdlib.h>
-#include <stdbool.h>
+#include "libmx.h"
 
 char *mx_strtrim(const char *str);
 bool mx_isspace(char c);

@@ -1,3 +1,5 @@
+#include "libmx.h"
+
 void leftRotateby0ne(int arr[], int n);
 void rightRotateby0ne(int arr[], int n);
 

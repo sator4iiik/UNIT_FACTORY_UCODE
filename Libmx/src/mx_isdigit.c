@@ -1,5 +1,4 @@
-#include <stdbool.h>
-#include <stdio.h>
+#include "libmx.h"
 
 bool m_isdigit(int c) {
     if(c >= 48 && c<= 57) {

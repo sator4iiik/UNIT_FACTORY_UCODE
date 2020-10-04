@@ -1,3 +1,4 @@
+#include "libmx.h"
 
 unsigned long mx_hex_to_nbr(const char *hex) {
     unsigned long res = 0;

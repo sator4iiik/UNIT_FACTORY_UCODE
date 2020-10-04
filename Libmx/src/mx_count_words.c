@@ -1,3 +1,4 @@
+#include "libmx.h"
 
 int mx_count_words(const char *str, char delimiter) {
         char new_word = 0;

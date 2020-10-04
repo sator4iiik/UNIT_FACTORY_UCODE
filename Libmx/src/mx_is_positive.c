@@ -1,3 +1,4 @@
+#include "libmx.h"
 
 void mx_printstr(const char *s);
 

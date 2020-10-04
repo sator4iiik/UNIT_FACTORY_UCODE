@@ -1,3 +1,5 @@
+#include "libmx.h"
+
 void mx_printchar(char c);
 
 void mx_isos_triangle(unsigned int length, char c) {
