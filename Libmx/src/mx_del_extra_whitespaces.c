@@ -1,5 +1,4 @@
 #include <stdlib.h>
-// #include <stdio.h>
 #include <stdbool.h>
 
 char *mx_strtrim(const char *str);
@@ -27,10 +26,3 @@ char *mx_del_extra_whitespaces(const char *str){
     free(newstr);
     return finstr;
 }
-
-// int main(){
-//     char *name= "\f   My name...    \n is \r Neo  \t \t\n";
-//     char *name1 = mx_del_extra_whitespaces(name); //returns "My name... is Neo"
-//     printf("%s",name1);
-//     system("leaks -q a.out");
-// }

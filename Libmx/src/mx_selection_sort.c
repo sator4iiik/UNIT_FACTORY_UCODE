@@ -10,10 +10,10 @@ int scmp(const char *s1, const char *s2) {
         return mx_strcmp(s2,s1);
 }
 
-int mx_selection_sort(char **arr, int size) {
+int mx_selection_sort(char **arr, int size)
+{
     int count = 0;
-    for (int i = 0; i < size-1; i++)
-    {
+    for (int i = 0; i < size-1; i++) {
         int min = i;
         for (int j = i+1; j < size; j++)
         if (scmp(arr[j], arr[min]) > 0)
