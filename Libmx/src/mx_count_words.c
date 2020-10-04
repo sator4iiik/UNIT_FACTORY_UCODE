@@ -1,4 +1,3 @@
-//#include <stdio.h>
 
 int mx_count_words(const char *str, char delimiter) {
         char new_word = 0;
@@ -6,8 +5,8 @@ int mx_count_words(const char *str, char delimiter) {
             while (*str) {
                 if(*str == delimiter) {
                     if (new_word) {
-                                count++;
-                            new_word = 0;
+                        count++;
+                    new_word = 0;
                     }
                 }
                 else {
@@ -19,10 +18,3 @@ int mx_count_words(const char *str, char delimiter) {
                 count++;
                 return count;
 }
-
-/*int main() {
-    char str[] = "follow   * the white rabbit";
-    char separ = ' ';
-    printf("%d", mx_count_words(str, separ));
-}
-*/

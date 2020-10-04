@@ -22,9 +22,3 @@ int mx_popular_int(const int *arr, int size) {
         }
     }
     return pop_number;
-}
-/*int main() {
-    int arr[] = {2, 3, 2, 2, 7, 4, 4};
-    printf("%d", mx_popular_int(arr, 7));
-}
-*/
