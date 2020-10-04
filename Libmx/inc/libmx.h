@@ -9,17 +9,33 @@
 #include <string.h>
 #include <malloc/malloc.h>
 
+#define INT_MIN -2147483648
+#define LONG_MAX 9223372036854775807
+#define LONG_MAX -9223372036854775807
+
+// struct. prototypes
 typedef struct s_list {
     void *data;
     struct s_list *next;
 }               t_list;
 
 
+typedef struct read_line {
+    char *buf;
+    int flag;
+    int index;
+    char delim;
+    int fd;
+    int chars;
+    int sum;
+    size_t k;
+    size_t j;
+}   r_line;
 
 //------UTILS PACK------//
 
 void mx_printchar(char c);
-// void mx_print_unicode(wchar_t c);
+void mx_print_unicode(wchar_t c);
 void mx_printstr(const char *s);
 // void mx_print_strarr(char **arr, const char *delim);
 void mx_printint(int n);
@@ -32,8 +48,6 @@ void mx_foreach(int *arr, int size, void(*f)(int));
 int mx_binary_search(char **arr, int size, const char *s, int *const);
 int mx_bubble_sort(char *arr, int size);
 // int mx_quicksort(char **arr, int left, int right);
-
-
 
 //------STRING PACK------//
 
@@ -111,7 +125,7 @@ bool mx_isspace(char c);
 bool mx_isupper(int c);
 int mx_tolower(int c);
 int mx_toupper(int c);
-int mx_insertion_sort(char **arr, int size)
+int mx_insertion_sort(char **arr, int size);
 int mx_linear_search(char **arr, const char *s);
 // bool mx_is_narcissistic(int num);
 bool mx_is_odd(int value);
