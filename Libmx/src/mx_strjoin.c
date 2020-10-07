@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "libmx.h"
 
 int mx_strlen(const char *s);
 char *mx_strcpy(char *dst, const char *src);

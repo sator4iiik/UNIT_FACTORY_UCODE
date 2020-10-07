@@ -1,4 +1,4 @@
-#include <stdbool.h>
+#include "libmx.h"
 
 int mx_tolower(int c);
 int mx_toupper(int c);

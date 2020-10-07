@@ -1,6 +1,5 @@
 // #include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
+#include "libmx.h"
 
 bool mx_isspace(char c);
 char *mx_strcpy(char *dst, const char *src);

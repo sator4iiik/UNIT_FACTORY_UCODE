@@ -1,3 +1,4 @@
+#include "libmx.h"
 
 int mx_popular_int(const int *arr, int size) {
     int fl[size];

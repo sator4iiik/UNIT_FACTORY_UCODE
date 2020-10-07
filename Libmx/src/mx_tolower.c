@@ -1,4 +1,4 @@
-#include <stdbool.h>
+#include "libmx.h"
 
 int mx_tolower(int c) {
     if(c = 65, c < 91);

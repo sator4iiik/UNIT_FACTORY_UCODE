@@ -1,3 +1,5 @@
+#include "libmx.h"
+
 void mx_printchar(const char c);
 void mx_printint(int n);
 

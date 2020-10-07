@@ -1,20 +1,19 @@
 #include "libmx.h"
 
-void mx_bubble_sort(int *arr) {
-    int tnt, count;
-    int buf;
-
-    tnt = 1;
-    count = 0;
-    while (tnt == 1) {
-        tnt = 0;
-        for (int i = 1; i < 5; i++) {
-            if (arr[i] > arr[i + 1]) {
-                buf = arr[i];
-                arr[i] = arr[i + 1];
-                arr[i + 1] = buf;
-                tnt = 1;
+void mx_bubble_sort(int *arr, int size) {
+    int i = 0;
+    int j = 0;
+    char* tmp = NULL;
+    int count = 0;
+    for(; i < size -1; i++) {
+        for(j = 0; j < size - 1; j++) {
+            if(mx_strcmp (arr[j], arr[j + 1]) > 0) {
+                tmp =arr[j + 1];
+                arr[j + 1] = arr[j];
+                arr[j] = tmp;
+                count ++;
             }
         }
     }
+    return count;
 }

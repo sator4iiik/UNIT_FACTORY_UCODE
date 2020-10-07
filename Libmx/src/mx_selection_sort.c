@@ -1,3 +1,5 @@
+#include "libmx.h"
+
 int mx_strlen(const char *s);
 int mx_strcmp(const char *s1, const char *s2);
 

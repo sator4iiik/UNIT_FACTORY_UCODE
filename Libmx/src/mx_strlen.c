@@ -1,3 +1,5 @@
+#include "libmx.h"
+
 int mx_strlen(const char *s) {
     int res = 0;
 
