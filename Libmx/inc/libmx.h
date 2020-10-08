@@ -102,13 +102,13 @@ int mx_count_words(const char *str, const char *sub);
 char *mx_strncpy(char *dst, const char *src, int len);
 int mx_strncmp(const char *s1; const char *s2, int n);
 int mx_count_substr(const char *str, const char *sub);
+int mx_get_substr_index(const char *str, const char *sub);
 char *mx_strcat(char *restrict s1, const char *restrict s2);
-// int mx_get_substr_index(const char *str, const char *sub);
 char *mx_strstr(const char *haystack, const char *restrict s2);
-// char *mx_replace_substr(const char *str, const char *sub,
-                                    //    const char *replace);
+char *mx_replace_substr(const char *str, const char *sub,
+                        const char *replace);
 int mx_read_line(char **lineptr, int buf_size, char delim,
-                                                    const int fd);
+                const int fd);
 char *mx_strnjoin(char const *s1, char const *s2, int len1, int len2);
 
 /////////-MEMORYPACK-/////////
