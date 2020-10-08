@@ -13,7 +13,7 @@
  *
  *
  *
- *|||||||||quantity function 80|||||||||||||||||||||||||size of pe: 40k|
+ *|||||||||quantity function 97|||||||||||||||||||||||||size of pe: 40k|
  *//////////////////////////////////////////////////////////////////////
 
 
@@ -62,7 +62,7 @@ typedef struct read_line {
     size_t j;
 }   r_line;
 
-/////////-UTILS PACK-/////////
+/////////-UTILS PACK-///14//////
 
 int mx_sqrt(int x);
 void mx_printint(int n);
@@ -79,7 +79,7 @@ void mx_foreach(int *arr, int size, void(*f)(int));
 void mx_print_strarr(char **arr, const char *delim);
 int mx_binary_search(char **arr, int size, const char *s, int *const);
 
-/////////-STRING PACK-/////////
+/////////-STRING PACK-///27//////
 
 void mx_strdel(char **str);
 int mx_strlen(const char *s);
@@ -111,7 +111,7 @@ int mx_read_line(char **lineptr, int buf_size, char delim,
                 const int fd);
 char *mx_strnjoin(char const *s1, char const *s2, int len1, int len2);
 
-/////////-MEMORYPACK-/////////
+/////////-MEMORYPACK-///09/////
 
 void *mx_realloc(void *ptr, size_t size);
 void *mx_memset(void *b, int c, size_t len);
@@ -125,17 +125,17 @@ void *mx_memmem(const void *big, size_t big_len, const void *little,
                 size_t little_len);
 void *mx_memcpy(void *restrict dst, const void *restrict src, size_t n);
 
-/////////-LISTPACK-/////////
+/////////-LISTPACK-///07/////
 
 int mx_list_size(t_list *list);
-// void mx_pop_back(t_list **head);
-// void mx_pop_front(t_list **head);
-// t_list *mx_create_node(void *data);
-// void mx_push_back(t_list **list, void *data);
-// void mx_push_front(t_list **list, void *data);
-// t_list *mx_sort_list(t_list *lst, bool (*cmp)(void *, void *));
+void mx_pop_back(t_list **head);
+void mx_pop_front(t_list **head);
+t_list *mx_create_node(void *data);
+void mx_push_back(t_list **list, void *data);
+void mx_push_front(t_list **list, void *data);
+t_list *mx_sort_list(t_list *lst, bool (*cmp)(void *, void *));
 
-/////////-ADDITIONALPACK-/////////
+/////////-ADDITIONALPACK-///40////
 
 int mx_tolower(int c);
 int mx_toupper(int c);
