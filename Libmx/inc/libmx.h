@@ -100,7 +100,7 @@ char *mx_strjoin(const char *s1, const char *s2);
 void mx_str_separate(const char *str, char delim);
 int mx_count_words(const char *str, const char *sub);
 char *mx_strncpy(char *dst, const char *src, int len);
-int mx_strncmp(const char *s1; const char *s2, int n);
+int mx_strncmp(const char *s1, const char *s2, int n);
 int mx_count_substr(const char *str, const char *sub);
 int mx_get_substr_index(const char *str, const char *sub);
 char *mx_strcat(char *restrict s1, const char *restrict s2);
@@ -118,15 +118,16 @@ void *mx_memset(void *b, int c, size_t len);
 void *mx_memchr(const void *s, int c, size_t n);
 void *mx_memrchr(const void *s, int c, size_t n);
 int mx_memcmp(const void *s1, const void *s2, size_t n);
-// void *mx_memmove(void *dst, const void *src, size_t len);
+void *mx_memmove(void *dst, const void *src, size_t len);
 void *mx_memccpy(void *restrict dst, const void *restrict src,
-                    int c, size_t n;)
+                int c, size_t n;)
+void *mx_memmem(const void *big, size_t big_len, const void *little,
+                size_t little_len);
 void *mx_memcpy(void *restrict dst, const void *restrict src, size_t n);
-                    size_t little_len);
 
 /////////-LISTPACK-/////////
 
-// int mx_list_size(t_list *list);
+int mx_list_size(t_list *list);
 // void mx_pop_back(t_list **head);
 // void mx_pop_front(t_list **head);
 // t_list *mx_create_node(void *data);
