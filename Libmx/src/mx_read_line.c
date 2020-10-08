@@ -78,8 +78,8 @@ int mx_read_line(char **lineptr, size_t buf_size, char delim, const int fd) {
     }
     free(leftovers);
     if (d_check)
-        leftovers = mx_inverse_strndup(buff, rd + 1);
+        leftovers = mx_inverse_strndup(buff, rd + 1)
     else if (!rd && !l_count)
         return -1;
-    return mx_strlen2(*lineptr);;
+    return mx_strlen2(*lineptr);
 }
