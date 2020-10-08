@@ -7,3 +7,4 @@ bool m_isdigit(int c) {
     else {
         return false;
     }
+}

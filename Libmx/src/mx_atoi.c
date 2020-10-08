@@ -1,6 +1,6 @@
 #include "libmx.h"
 
-bool mx_isspace(int c);
+bool mx_isspace(char c);
 bool mx_isdigit(int c);
 
 int mx_atoi(const char *str) {

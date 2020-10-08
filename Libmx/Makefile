@@ -2,7 +2,7 @@ NAME = libmx.a
 
 SRC_DIR = src
 OBJ_DIR = obj
-INC_DIR = INC_DIR
+INC_DIR = inc
 
 SRC_FILES = $(wildcard $(SRC_DIR)/*.c)
 OBJ_FILES = $(addprefix $(OBJ_DIR)/, $(notdir $(SRC_FILES:%.c=%.o)))
@@ -21,7 +21,6 @@ all: $(NAME)
 
 $(NAME): $(OBJ_FILES)
 	@$(AR) $(AFLAGS) $@ $^
-	@$(CC) $(CFLAGS) $@ $^ -o $(NAMEBIN)
 	@printf "\r\33[2K$@\t \033[32;1mcreated\033[0m\n"
 
 $(OBJ_FILES): | $(OBJ_DIR)
@@ -37,7 +36,7 @@ clean:
 	@$(RM) $(OBJ_DIR) a.out
 	@printf "$(OBJ_DIR) in $(NAME)\t \033[31;1mdeleted\033[0m\n"
 
-uninstal: clean
+uninstall: clean
 	@$(RM) $(NAME)
 	@printf "$(NAME)
 	@@printf "$(NAME)\t \033[31;1muninstalled\033[0m\n"

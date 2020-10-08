@@ -12,5 +12,5 @@ void mx_is_positive(int i) {
     if (i == 0) {
         mx_printstr("zero");
     }
-    mx_printstr('\n');
+    mx_printstr("\n");
 }

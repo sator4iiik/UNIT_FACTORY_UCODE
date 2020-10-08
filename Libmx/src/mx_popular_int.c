@@ -23,3 +23,4 @@ int mx_popular_int(const int *arr, int size) {
         }
     }
     return pop_number;
+}
