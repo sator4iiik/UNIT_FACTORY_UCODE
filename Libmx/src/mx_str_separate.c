@@ -1,7 +1,5 @@
 #include "libmx.h"
 
-void mx_printchar(char c);
-
 void mx_str_separate(const char *str, char delim) {
     char new_line_fl = 0;
     while (*str) {

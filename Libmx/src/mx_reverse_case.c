@@ -1,10 +1,5 @@
 #include "libmx.h"
 
-int mx_tolower(int c);
-int mx_toupper(int c);
-bool mx_isupper(int c);
-bool mx_islower(int c);
-
 void mx_reverse_case(char *s) {
     int i = 0;
 

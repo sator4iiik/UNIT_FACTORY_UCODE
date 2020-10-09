@@ -1,7 +1,5 @@
 #include "libmx.h"
 
-int mx_strlen(const char *s);
-
 int mx_insertion_sort(char **arr, int size) {
     int count = 0;
     for (int i = 1; i < size; i++) {

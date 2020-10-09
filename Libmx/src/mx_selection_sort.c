@@ -1,8 +1,5 @@
 #include "libmx.h"
 
-int mx_strlen(const char *s);
-int mx_strcmp(const char *s1, const char *s2);
-
 int scmp(const char *s1, const char *s2) {
     if (mx_strlen(s1) < mx_strlen(s2))
         return 1;

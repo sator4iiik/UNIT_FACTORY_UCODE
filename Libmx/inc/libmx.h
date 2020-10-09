@@ -39,9 +39,9 @@
 // #include <wchar.h>
 // #include <stddef.h>
 
-// #define INT_MIN -2147483648
-// #define LONG_MAX 9223372036854775807
-// #define LONG_MAX -9223372036854775807
+#define INT_MIN -2147483648
+#define LONG_MAX 9223372036854775807
+#define LONG_MIN -9223372036854775807
 
 // struct. prototypes
 typedef struct s_list {
@@ -103,8 +103,8 @@ char *mx_strncpy(char *dst, const char *src, int len);
 int mx_strncmp(const char *s1, const char *s2, int n);
 int mx_count_substr(const char *str, const char *sub);
 int mx_get_substr_index(const char *str, const char *sub);
+char *mx_strstr(const char *haystack, const char *needle);
 char *mx_strcat(char *restrict s1, const char *restrict s2);
-char *mx_strstr(const char *haystack, const char *restrict s2);
 char *mx_replace_substr(const char *str, const char *sub,
                         const char *replace);
 int mx_read_line(char **lineptr, size_t buf_size, char delim,

@@ -1,7 +1,5 @@
 #include "libmx.h"
 
-void mx_printchar(char c);
-
 void mx_hexadecimal(void) {
     for (int i = 48; i < 58; i++)
         mx_printchar(i);

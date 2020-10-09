@@ -1,12 +1,6 @@
 // #include <stdio.h>
 #include "libmx.h"
 
-bool mx_isspace(char c);
-char *mx_strcpy(char *dst, const char *src);
-void mx_strdel(char **str);
-int mx_strlen(const char *s);
-char *mx_strnew(const int size);
-
 char *mx_strtrim(const char *str){
     if(str == NULL){
         return NULL;

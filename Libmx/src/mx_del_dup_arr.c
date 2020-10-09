@@ -1,7 +1,5 @@
 #include "libmx.h"
 
-int *mx_copy_int_arr(const int *src, int size);
-
 int *mx_del_dup_arr(int *src, int src_size,int *dst_size) {
     if ( src_size <=0 || *dst_size <=0 || src==NULL){
         return NULL;

@@ -1,10 +1,5 @@
 #include "libmx.h"
 
-char *mx_strtrim(const char *str);
-bool mx_isspace(char c);
-int mx_strlen(const char *s);
-char *mx_strnew(const int size);
-
 char *mx_del_extra_whitespaces(const char *str){
     char *newstr = mx_strtrim(str);
     int i, j = 0;
