@@ -13,7 +13,7 @@
  *
  *
  *
- *|||||||||quantity function 97|||||||||||||||||||||||||size of pe: 40k|
+ *|||||||||quantity function 98|||||||||||||||||||||||||size of pe: 40k|
  *//////////////////////////////////////////////////////////////////////
 
 
@@ -79,11 +79,12 @@ void mx_foreach(int *arr, int size, void(*f)(int));
 void mx_print_strarr(char **arr, const char *delim);
 int mx_binary_search(char **arr, int size, const char *s, int *const);
 
-/////////-STRING PACK-///27//////
+/////////-STRING PACK-///28//////
 
 void mx_strdel(char **str);
 int mx_strlen(const char *s);
 void mx_str_reverse(char *s);
+void mx_del_strarr(char ***arr);
 char *mx_strdup(const char *s1);
 char *mx_strnew(const int size);
 char *mx_strtrim(const char *str);
@@ -97,6 +98,7 @@ int mx_count_words(const char *str, char c);
 char *mx_strcpy(char *dst, const char *src);
 int mx_strcmp(const char *s1, const char *s2);
 int mx_get_char_index(const char *str, char c);
+char *mx_del_extra_whitespaces(const char *str);
 char *mx_strjoin(const char *s1, const char *s2);
 void mx_str_separate(const char *str, char delim);
 char *mx_strncpy(char *dst, const char *src, int len);

@@ -29,232 +29,240 @@ int main(void) {
     //     mx_printstr("mx_print_strarr return nothing? | "); mx_print_strarr(NULL, NULL); mx_printstr("\n");
     //     mx_printstr("mx_print_strarr return nothing? | "); mx_print_strarr(NULL, " "); mx_printstr("\n");
 
-//     mx_printstr("\n\n----------------MX_PRINTINT-------------------\n");
-//         mx_printstr("mx_printint -2147483648 | "); mx_printint(-2147483648); mx_printstr("\n");
-//         mx_printstr("mx_printint -1 | "); mx_printint(-1); mx_printstr("\n");
-//         mx_printstr("mx_printint 0 | "); mx_printint(0); mx_printstr("\n");
-//         mx_printstr("mx_printint 1 | "); mx_printint(1); mx_printstr("\n");
-//         mx_printstr("mx_printint of 2147483647 | "); mx_printint(2147483647); mx_printstr("\n");
+    // mx_printstr("\n\n----------------MX_PRINTINT-------------------\n");
+    //     mx_printstr("mx_printint -2147483648 | "); mx_printint(-2147483648); mx_printstr("\n");
+    //     mx_printstr("mx_printint -1 | "); mx_printint(-1); mx_printstr("\n");
+    //     mx_printstr("mx_printint 0 | "); mx_printint(0); mx_printstr("\n");
+    //     mx_printstr("mx_printint 1 | "); mx_printint(1); mx_printstr("\n");
+    //     mx_printstr("mx_printint of 2147483647 | "); mx_printint(2147483647); mx_printstr("\n");
 
-//     mx_printstr("\n\n----------------MX_POW-------------------\n");
-//         mx_printstr("mx_pow 3, 3 is 27? | ");
-//         printf("%.0f\n", mx_pow(3, 3));
-//         mx_printstr("mx_pow 2.5, 3 is 15.625? | ");
-//         printf("%.3f\n",mx_pow(2.5, 3));
-//         mx_printstr("mx_pow 2, 0 is 1 | ");
-//         mx_printstr("mx_pow 3, 3 is 27? | ");
-//         printf("%.0f\n", mx_pow(3, 3));
-//         mx_printstr("mx_pow 2.5, 3 is 15.625? | ");
-//         printf("%.3f\n",mx_pow(2.5, 3));
-//         mx_printstr("mx_pow 2, 0 is 1 | ");
-//         printf("%.0f\n",mx_pow(2, 0));
+    // mx_printstr("\n\n----------------MX_POW-------------------\n");
+    //     mx_printstr("mx_pow 3, 3 is 27? | ");
+    //     printf("%.0f\n", mx_pow(3, 3));
+    //     mx_printstr("mx_pow 2.5, 3 is 15.625? | ");
+    //     printf("%.3f\n",mx_pow(2.5, 3));
+    //     mx_printstr("mx_pow 2, 0 is 1 | ");
+    //     mx_printstr("mx_pow 3, 3 is 27? | ");
+    //     printf("%.0f\n", mx_pow(3, 3));
+    //     mx_printstr("mx_pow 2.5, 3 is 15.625? | ");
+    //     printf("%.3f\n",mx_pow(2.5, 3));
+    //     mx_printstr("mx_pow 2, 0 is 1 | ");
+    //     printf("%.0f\n",mx_pow(2, 0));
 
-//     mx_printstr("\n\n----------------MX_SQRT-------------------\n");
-//         mx_printstr("mx_sqrt 3 is 0? | "); mx_printint(mx_sqrt(3)); mx_printstr("\n");
-//         mx_printstr("mx_sqrt 4 is 2? | "); mx_printint(mx_sqrt(4)); mx_printstr("\n");
-//         mx_printstr("mx_sqrt 625 is 25? | "); mx_printint(mx_sqrt(625)); mx_printstr("\n");
-//         mx_printstr("mx_sqrt 2147395600 is 46340? | "); mx_printint(mx_sqrt(2147395600)); mx_printstr("\n");
+    // mx_printstr("\n\n----------------MX_SQRT-------------------\n");
+    //     mx_printstr("mx_sqrt 3 is 0? | "); mx_printint(mx_sqrt(3)); mx_printstr("\n");
+    //     mx_printstr("mx_sqrt 4 is 2? | "); mx_printint(mx_sqrt(4)); mx_printstr("\n");
+    //     mx_printstr("mx_sqrt 625 is 25? | "); mx_printint(mx_sqrt(625)); mx_printstr("\n");
+    //     mx_printstr("mx_sqrt 2147395600 is 46340? | "); mx_printint(mx_sqrt(2147395600)); mx_printstr("\n");
 
-//     mx_printstr("\n\n----------------MX_NBR_TO_HEX-------------------\n");
-//         char *hex1 = mx_nbr_to_hex(52);
-//         char *hex2 = mx_nbr_to_hex(1000);
-//         mx_printstr("mx_nbr_to_hex of 52 is 34? | "); mx_printstr(hex1); mx_printstr("\n");
-//         mx_printstr("mx_nbr_to_hex of 1000 is 3e8? | "); mx_printstr(hex2); mx_printstr("\n");
-
-
-//     mx_printstr("\n\n----------------MX_HEX_TO_NBR-------------------\n");
-//         mx_printstr("mx_hex_to_nbr of \"c4\" is 196? | "); mx_printint(mx_hex_to_nbr("c4")); mx_printstr("\n");
-//         mx_printstr("mx_hex_to_nbr of \"fade\" is 64222? | "); mx_printint(mx_hex_to_nbr("FADE")); mx_printstr("\n");
-//         mx_printstr("mx_hex_to_nbr of NULL is 0 | "); mx_printint(mx_hex_to_nbr(NULL)); mx_printstr("\n");
-
-//     mx_printstr("\n\n----------------MX_ITOA-------------------\n");
-//         char *integer1 = mx_itoa(-2147483648);
-//         mx_printstr("mx_itoa return -2147483648? | "); printf("%s\n", integer1);
-//         char *integer2 = mx_itoa(-11);
-//         mx_printstr("mx_itoa return -11? | "); printf("%s\n", integer2);
-//         char *integer3 = mx_itoa(-1);
-//         mx_printstr("mx_itoa return -1? | "); printf("%s\n", integer3);
-//         char *integer4 = mx_itoa(0);
-//         mx_printstr("mx_itoa return 0? | "); printf("%s\n", integer4);
-//         char *integer5 = mx_itoa(1);
-//         mx_printstr("mx_itoa return 1? | "); printf("%s\n", integer5);
-//         char *integer6 = mx_itoa(10);
-//         mx_printstr("mx_itoa return 10? | "); printf("%s\n", integer6);
-//         char *integer7 = mx_itoa(1234);
-//         mx_printstr("mx_itoa return 1234? | "); printf("%s\n", integer7);
-//         char *integer8 = mx_itoa(2147483647);
-//         mx_printstr("mx_itoa return 2147483647? | "); printf("%s\n", integer8);
-//         char *integer9 = itoa(1024);
-//         mx_printstr("itoa return 0? | "); printf("%s\n", integer9);
-
-//     mx_printstr("\n\n----------------MX_FOREACH-------------------\n");
-//         int foreach[5] = {1, 2, 3, 4, 5};
-//         mx_printstr("mx_foreach result is 12345? | "); mx_foreach(foreach, 5, mx_printint); mx_printstr("\n");
-
-//     mx_printstr("\n\n----------------MX_BINARY_SEARCH-------------------\n");
-//         char *binary_arr[6] = {"222", "Abcd", "aBc", "ab", "az", "z"};
-//         int binary_count = 0;
-//         mx_printstr("mx_binary_search return 3 and 3? | "); mx_printint(mx_binary_search(binary_arr, 6, "ab", &binary_count)); mx_printchar(' '); mx_printint(binary_count); mx_printstr("\n");
-//         binary_count = 0;
-//         mx_printstr("mx_binary_search return 2 and 1? | "); mx_printint(mx_binary_search(binary_arr, 6, "aBc", &binary_count)); mx_printchar(' '); mx_printint(binary_count); mx_printstr("\n");
-//         binary_count = 0;
-//         mx_printstr("mx_binary_search return -1 and 0? | "); mx_printint(mx_binary_search(binary_arr, 6, "aBz", &binary_count)); mx_printchar(' '); mx_printint(binary_count); mx_printstr("\n");
+    // mx_printstr("\n\n----------------MX_NBR_TO_HEX-------------------\n");
+    //     char *hex1 = mx_nbr_to_hex(52);
+    //     char *hex2 = mx_nbr_to_hex(1000);
+    //     mx_printstr("mx_nbr_to_hex of 52 is 34? | "); mx_printstr(hex1); mx_printstr("\n");
+    //     mx_printstr("mx_nbr_to_hex of 1000 is 3e8? | "); mx_printstr(hex2); mx_printstr("\n");
 
 
-//     mx_printstr("\n\n----------------MX_BUBBLE_SORT-------------------\n");
-//         char *bubble_arr[4] = {"abc", "xyz", "ghi", "def"};
-//         mx_printstr("mx_bubble_sort return 3? | "); mx_printint(mx_bubble_sort(bubble_arr, 4)); mx_printstr("\n");
-//         char *bubble_arr2[3] = {"abc", "acb", "a"};
-//         mx_printstr("mx_bubble_sort return 2? | "); mx_printint(mx_bubble_sort(bubble_arr2, 3)); mx_printstr("\n");
+    // mx_printstr("\n\n----------------MX_HEX_TO_NBR-------------------\n");
+    //     mx_printstr("mx_hex_to_nbr of \"c4\" is 196? | "); mx_printint(mx_hex_to_nbr("c4")); mx_printstr("\n");
+    //     mx_printstr("mx_hex_to_nbr of \"fade\" is 64222? | "); mx_printint(mx_hex_to_nbr("FADE")); mx_printstr("\n");
+    //     mx_printstr("mx_hex_to_nbr of NULL is 0 | "); mx_printint(mx_hex_to_nbr(NULL)); mx_printstr("\n");
 
-//     mx_printstr("\n\n----------------MX_QUICK_SORT-------------------\n");
-//         char *quicksort_arr1[] = {"Michelangelo", "Donatello", "Leonardo", "Raphael"};
-//         char *quicksort_arr2[] = {"DMC", "Clint Eastwood", "Dr Brown", "Einstein", "Jessica", "Biff Tannen"};
-//         mx_printstr("mx_quicksort return 2? | "); mx_printint(mx_quicksort(quicksort_arr1, 0, 3)); mx_printstr("\n");
-//         mx_printstr("arr1 is \"Raphael\" \"Leonardo\" \"Donatello\" \"Michelangelo\" | \n\t");
-//         for (int i = 0; i < 4; i++) {
-//             mx_printstr("\""); mx_printstr(quicksort_arr1[i]); mx_printstr("\"");
-//             mx_printstr(" ");
-//         }
-//         mx_printstr("\n");
-//         mx_printstr("mx_quicksort return 2? | "); mx_printint(mx_quicksort(quicksort_arr2, 0, 5)); mx_printstr("\n");
-//         mx_printstr("arr2 is \"DMC\" \"Jessica\" \"Dr Brown\" \"Einstein\" \"Biff Tannen\" \"Clint Eastwood\" | \n\t");
-//         for (int i = 0; i < 6; i++) {
-//             mx_printstr("\""); mx_printstr(quicksort_arr2[i]); mx_printstr("\"");
-//             mx_printstr(" ");
-//         }
-//         mx_printstr("\n");
-//         mx_printstr("mx_quicksort return -1? | "); mx_printint(mx_quicksort(NULL, 0, 5)); mx_printstr("\n");
+    // mx_printstr("\n\n----------------MX_ITOA-------------------\n");
+    //     char *integer1 = mx_itoa(-2147483648);
+    //     mx_printstr("mx_itoa return -2147483648? | "); printf("%s\n", integer1);
+    //     char *integer2 = mx_itoa(-11);
+    //     mx_printstr("mx_itoa return -11? | "); printf("%s\n", integer2);
+    //     char *integer3 = mx_itoa(-1);
+    //     mx_printstr("mx_itoa return -1? | "); printf("%s\n", integer3);
+    //     char *integer4 = mx_itoa(0);
+    //     mx_printstr("mx_itoa return 0? | "); printf("%s\n", integer4);
+    //     char *integer5 = mx_itoa(1);
+    //     mx_printstr("mx_itoa return 1? | "); printf("%s\n", integer5);
+    //     char *integer6 = mx_itoa(10);
+    //     mx_printstr("mx_itoa return 10? | "); printf("%s\n", integer6);
+    //     char *integer7 = mx_itoa(1234);
+    //     mx_printstr("mx_itoa return 1234? | "); printf("%s\n", integer7);
+    //     char *integer8 = mx_itoa(2147483647);
+    //     mx_printstr("mx_itoa return 2147483647? | "); printf("%s\n", integer8);
+    //     char *integer9 = itoa(1024);
+    //     mx_printstr("itoa return 0? | "); printf("%s\n", integer9);
 
+    // mx_printstr("\n\n----------------MX_FOREACH-------------------\n");
+    //     int foreach[5] = {1, 2, 3, 4, 5};
+    //     mx_printstr("mx_foreach result is 12345? | "); mx_foreach(foreach, 5, mx_printint); mx_printstr("\n");
 
-//     mx_printstr("\n\n **********************\n *\tSTRING PACK   *\n **********************\n\n");
-//     mx_printstr("\n\n----------------MX_STRLEN-------------------\n");
-//         mx_printstr("mx_strlen return 9? | "); mx_printint(mx_strlen("game over")); mx_printstr("\n");
-//         mx_printstr("mx_strlen return 12? | "); mx_printint(mx_strlen("hello world!")); mx_printstr("\n");
-
-//     mx_printstr("\n\n----------------MX_SWAP_CHAR-------------------\n");
-//         char swap_char[] = "ONE";
-//         mx_printstr("mx_swap_char return NOE? | "); mx_swap_char(&swap_char[0], &swap_char[1]); mx_printstr(swap_char); mx_printstr("\n");
-//         mx_printstr("mx_swap_char return NEO? | "); mx_swap_char(&swap_char[1], &swap_char[2]); mx_printstr(swap_char); mx_printstr("\n");
-
-//     mx_printstr("\n\n----------------MX_STR_REVERSE-------------------\n");
-//         char str_reverse[] = "game over";
-//         mx_str_reverse(str_reverse);
-//         mx_printstr("mx_str_reverse of \"game over\" is revo emag | "); mx_printstr(str_reverse); mx_printstr("\n");
-
-//     mx_printstr("\n\n----------------MX_STRDEL-------------------\n");
-//         char *strdel = strdup("full string");
-//         mx_printstr("before mx_strdel string is \"full string\"? | "); mx_printstr(strdel); mx_printstr("\n");
-//         mx_strdel(&strdel);
-//         mx_printstr("after mx_strdel string is (null)? | "); printf("%s\n", strdel);
-
-//     mx_printstr("\n\n----------------MX_DEL_STRARR-------------------\n");
-//         char **strarr = (char **)malloc(sizeof(char *) * 3);
-//         strarr[0] = strdup("abc"); strarr[1] = strdup("xyz"); strarr[2] = NULL;
-//         mx_printstr("strarr before mx_del_strarr is abc  xyz  (null)? | "); printf("%s  %s  %s\n", strarr[0], strarr[1], strarr[2]);
-//         mx_printstr("strarr before mx_del_strarr is abc  xyz  (null)? | "); printf("%s  %s  %s\n", strarr[0], strarr[1], strarr[2]);
-//         mx_del_strarr(&strarr);
-//         mx_printstr("strarr after mx_del_strarr is (null)? | "); printf("%s\n", (char *) strarr);
+    // mx_printstr("\n\n----------------MX_BINARY_SEARCH-------------------\n");
+    //     char *binary_arr[6] = {"222", "Abcd", "aBc", "ab", "az", "z"};
+    //     int binary_count = 0;
+    //     mx_printstr("mx_binary_search return 3 and 3? | "); mx_printint(mx_binary_search(binary_arr, 6, "ab", &binary_count)); mx_printchar(' '); mx_printint(binary_count); mx_printstr("\n");
+    //     binary_count = 0;
+    //     mx_printstr("mx_binary_search return 2 and 1? | "); mx_printint(mx_binary_search(binary_arr, 6, "aBc", &binary_count)); mx_printchar(' '); mx_printint(binary_count); mx_printstr("\n");
+    //     binary_count = 0;
+    //     mx_printstr("mx_binary_search return -1 and 0? | "); mx_printint(mx_binary_search(binary_arr, 6, "aBz", &binary_count)); mx_printchar(' '); mx_printint(binary_count); mx_printstr("\n");
 
 
+    // mx_printstr("\n\n----------------MX_BUBBLE_SORT-------------------\n");
+    //     char *bubble_arr[4] = {"abc", "xyz", "ghi", "def"};
+    //     mx_printstr("mx_bubble_sort return 3? | "); mx_printint(mx_bubble_sort(bubble_arr, 4)); mx_printstr("\n");
+    //     char *bubble_arr2[3] = {"abc", "acb", "a"};
+    //     mx_printstr("mx_bubble_sort return 2? | "); mx_printint(mx_bubble_sort(bubble_arr2, 3)); mx_printstr("\n");
+
+    // mx_printstr("\n\n----------------MX_QUICK_SORT-------------------\n");
+    //     char *quicksort_arr1[] = {"Michelangelo", "Donatello", "Leonardo", "Raphael"};
+    //     char *quicksort_arr2[] = {"DMC", "Clint Eastwood", "Dr Brown", "Einstein", "Jessica", "Biff Tannen"};
+    //     mx_printstr("mx_quicksort return 2? | "); mx_printint(mx_quicksort(quicksort_arr1, 0, 3)); mx_printstr("\n");
+    //     mx_printstr("arr1 is \"Raphael\" \"Leonardo\" \"Donatello\" \"Michelangelo\" | \n\t");
+    //     for (int i = 0; i < 4; i++) {
+    //         mx_printstr("\""); mx_printstr(quicksort_arr1[i]); mx_printstr("\"");
+    //         mx_printstr(" ");
+    //     }
+    //     mx_printstr("\n");
+    //     mx_printstr("mx_quicksort return 2? | "); mx_printint(mx_quicksort(quicksort_arr2, 0, 5)); mx_printstr("\n");
+    //     mx_printstr("arr2 is \"DMC\" \"Jessica\" \"Dr Brown\" \"Einstein\" \"Biff Tannen\" \"Clint Eastwood\" | \n\t");
+    //     for (int i = 0; i < 6; i++) {
+    //         mx_printstr("\""); mx_printstr(quicksort_arr2[i]); mx_printstr("\"");
+    //         mx_printstr(" ");
+    //     }
+    //     mx_printstr("\n");
+    //     mx_printstr("mx_quicksort return -1? | "); mx_printint(mx_quicksort(NULL, 0, 5)); mx_printstr("\n");
+
+
+    // mx_printstr("\n\n **********************\n *\tSTRING PACK   *\n **********************\n\n");
+    // mx_printstr("\n\n----------------MX_STRLEN-------------------\n");
+    //     mx_printstr("mx_strlen return 9? | "); mx_printint(mx_strlen("game over")); mx_printstr("\n");
+    //     mx_printstr("mx_strlen return 12? | "); mx_printint(mx_strlen("hello world!")); mx_printstr("\n");
+
+    // mx_printstr("\n\n----------------MX_SWAP_CHAR-------------------\n");
+    //     char swap_char[] = "ONE";
+    //     mx_printstr("mx_swap_char return NOE? | "); mx_swap_char(&swap_char[0], &swap_char[1]); mx_printstr(swap_char); mx_printstr("\n");
+    //     mx_printstr("mx_swap_char return NEO? | "); mx_swap_char(&swap_char[1], &swap_char[2]); mx_printstr(swap_char); mx_printstr("\n");
+
+    // mx_printstr("\n\n----------------MX_STR_REVERSE-------------------\n");
+    //     char str_reverse[] = "game over";
+    //     mx_str_reverse(str_reverse);
+    //     mx_printstr("mx_str_reverse of \"game over\" is revo emag | "); mx_printstr(str_reverse); mx_printstr("\n");
+
+    // mx_printstr("\n\n----------------MX_STRDEL-------------------\n");
+    //     char *strdel = strdup("full string");
+    //     mx_printstr("before mx_strdel string is \"full string\"? | "); mx_printstr(strdel); mx_printstr("\n");
+    //     mx_strdel(&strdel);
+    //     mx_printstr("after mx_strdel string is (null)? | "); printf("%s\n", strdel);
+
+    // mx_printstr("\n\n----------------MX_DEL_STRARR-------------------\n");
+    //     char **strarr = (char **)malloc(sizeof(char *) * 3);
+    //     strarr[0] = strdup("abc"); strarr[1] = strdup("xyz"); strarr[2] = NULL;
+    //     mx_printstr("strarr before mx_del_strarr is abc  xyz  (null)? | "); printf("%s  %s  %s\n", strarr[0], strarr[1], strarr[2]);
+    //     mx_printstr("strarr before mx_del_strarr is abc  xyz  (null)? | "); printf("%s  %s  %s\n", strarr[0], strarr[1], strarr[2]);
+    //     mx_del_strarr(&strarr);
+    //     mx_printstr("strarr after mx_del_strarr is (null)? | "); printf("%s\n", (char *) strarr);
 
 
 
-//     mx_printstr("\n\n----------------MX_GET_CHAR_INDEX-------------------\n");
-//         char *get_char_index = "123456789";
-//         mx_printstr("mx_get_char_index return 4? | "); mx_printint(mx_get_char_index(get_char_index, '5')); mx_printstr("\n");
-//         mx_printstr("mx_get_char_index return -1? | "); mx_printint(mx_get_char_index(get_char_index, 'A')); mx_printstr("\n");
-//         mx_printstr("mx_get_char_index return -2? | "); mx_printint(mx_get_char_index(NULL, '5')); mx_printstr("\n");
-
-//     mx_printstr("\n\n----------------MX_STRDUP-------------------\n");
-//         char *strdup1 = mx_strdup("123456789");
-//         mx_printstr("mx_strdup return \"123456789\"? | "); mx_printstr(strdup1); mx_printstr("\n");
-
-//     mx_printstr("\n\n----------------MX_STRNDUP-------------------\n");
-//         char *strndup = mx_strndup("hello", 20);
-//         mx_printstr("mx_strndup return \"hello\"? | "); mx_printstr(strndup); mx_printstr("\n");
 
 
-//     mx_printstr("\n\n----------------MX_STRCPY-------------------\n");
-//         const char *strcpy = "123456789"; char dstcpy[15];
-//         mx_printstr("mx_strcpy return \"123456789\"? | "); mx_printstr(mx_strcpy(dstcpy, strcpy)); mx_printstr("\n");
+    // mx_printstr("\n\n----------------MX_GET_CHAR_INDEX-------------------\n");
+    //     char *get_char_index = "123456789";
+    //     mx_printstr("mx_get_char_index return 4? | "); mx_printint(mx_get_char_index(get_char_index, '5')); mx_printstr("\n");
+    //     mx_printstr("mx_get_char_index return -1? | "); mx_printint(mx_get_char_index(get_char_index, 'A')); mx_printstr("\n");
+    //     mx_printstr("mx_get_char_index return -2? | "); mx_printint(mx_get_char_index(NULL, '5')); mx_printstr("\n");
 
-//     mx_printstr("\n\n----------------MX_STRNCPY-------------------\n");
-//         const char *strncpy = "123456789"; char dstncpy[15];
-//         mx_printstr("mx_strncpy return \"12345\"? | "); mx_printstr(mx_strncpy(dstncpy, strncpy, 5)); mx_printstr("\n");
+    // mx_printstr("\n\n----------------MX_STRDUP-------------------\n");
+    //     char *strdup1 = mx_strdup("123456789");
+    //     mx_printstr("mx_strdup return \"123456789\"? | "); mx_printstr(strdup1); mx_printstr("\n");
 
-//     mx_printstr("\n\n----------------MX_STRCMP-------------------\n");
-//         char *strcmp1 = "aaaaaaa"; char *strcmp2 = "aaaaaaaA"; char *strcmp3 = "aaaaaaa";
-//         mx_printstr("strcmp \t  return   \t   | "); mx_printint(strcmp(strcmp2, strcmp1));
-//         mx_printstr("\nmx_strcmp return the same? | "); mx_printint(mx_strcmp(strcmp2, strcmp1)); mx_printstr("\n");
-//         mx_printstr("strcmp \t  return   \t   | "); mx_printint(strcmp(strcmp1, strcmp2));
-//         mx_printstr("\nmx_strcmp return the same? | "); mx_printint(mx_strcmp(strcmp1, strcmp2)); mx_printstr("\n");
-//         mx_printstr("strcmp \t  return   \t   | "); mx_printint(strcmp(strcmp1, strcmp3));
-//         mx_printstr("\nmx_strcmp return the same? | "); mx_printint(mx_strcmp(strcmp1, strcmp3)); mx_printstr("\n");
-
-//     mx_printstr("\n\n----------------MX_STRCAT-------------------\n");
-//         char strcat1[10] = "12345"; char strcat2[5] = "6789";
-//         char strcat3[10] = "12345"; char strcat4[5] = "6789";
-//         mx_printstr("strcat \t  return   \t   | "); mx_printstr(strcat(strcat1, strcat2));
-//         mx_printstr("\nmx_strcat return the same? | "); mx_printstr(mx_strcat(strcat3, strcat4)); mx_printstr("\n");
-
-//     mx_printstr("\n\n----------------MX_STRSTR-------------------\n");
-//         char *strstr1 = "12345679";
-//         char *cmp = "5";
-//         cmp = (char *)malloc(sizeof(char));
-//         printf("strstr return \"%s\". mx_strstr return the same? | %s\n", strstr(strstr1, cmp), mx_strstr(strstr1, cmp));
-
-//     mx_printstr("\n\n----------------MX_GET_SUBSTR_INDEX-------------------\n");
-//         mx_printstr("mx_get_substr_index \"2\"? | "); mx_printint(mx_get_substr_index("McDonalds", "Don")); mx_printstr("\n");
-//         mx_printstr("mx_get_substr_index \"3\"? | "); mx_printint(mx_get_substr_index("McDonalds Donuts", "on")); mx_printstr("\n");
-//         mx_printstr("mx_get_substr_index \"-1\"? | "); mx_printint(mx_get_substr_index("McDonalds", "Donatello")); mx_printstr("\n");
-//         mx_printstr("mx_get_substr_index \"-2\"? | "); mx_printint(mx_get_substr_index("McDonalds", NULL)); mx_printstr("\n");
-//         mx_printstr("mx_get_substr_index \"-2\"? | "); mx_printint(mx_get_substr_index(NULL, "Don")); mx_printstr("\n");
-
-//     write(1, "\n\n----------------MX_COUNT_SUBSTR-------------------\n", 53);
-//         char *count_substr = "yo, yo, yo Neo";
-//         mx_printstr("mx_count_substr return \"3\"? | "); mx_printint(mx_count_substr(count_substr, "yo")); mx_printstr("\n");
-//         mx_printstr("mx_count_substr return \"-1\"? (null's check) | "); mx_printint(mx_count_substr(count_substr, "")); mx_printstr("\n");
-//         mx_printstr("mx_count_substr return \"-1\"? (null's check) | "); mx_printint(mx_count_substr("", "yo")); mx_printstr("\n");
-
-//     mx_printstr("\n\n----------------MX_COUNT_WORDS-------------------\n");
-//         char *count_words = "   follow  *    the   white   rabbit";
-//         mx_printstr("mx_count_words return \"2\"? | "); mx_printint(mx_count_words(count_words, '*')); mx_printstr("\n");
-//         mx_printstr("mx_count_words return \"5\"? | "); mx_printint(mx_count_words(count_words, ' ')); mx_printstr("\n");
-//         mx_printstr("mx_count_words return \"-1\"? (null's check) | "); mx_printint(mx_count_words(NULL, ' ')); mx_printstr("\n");
+    // mx_printstr("\n\n----------------MX_STRNDUP-------------------\n");
+    //     char *strndup = mx_strndup("hello", 20);
+    //     mx_printstr("mx_strndup return \"hello\"? | "); mx_printstr(strndup); mx_printstr("\n");
 
 
+    // mx_printstr("\n\n----------------MX_STRCPY-------------------\n");
+    //     const char *strcpy = "123456789"; char dstcpy[15];
+    //     mx_printstr("mx_strcpy return \"123456789\"? | "); mx_printstr(mx_strcpy(dstcpy, strcpy)); mx_printstr("\n");
 
-//     mx_printstr("\n\n----------------MX_STRNEW-------------------\n");
-//         char *strnew = mx_strnew(5);
-//         mx_printstr("mx_strnew return \"^@^@^@^@^@$\"? (check with cat -e) | "); write( 1, strnew, 5); mx_printstr("\n");
+    // mx_printstr("\n\n----------------MX_STRNCPY-------------------\n");
+    //     const char *strncpy = "123456789"; char dstncpy[15];
+    //     mx_printstr("mx_strncpy return \"12345\"? | "); mx_printstr(mx_strncpy(dstncpy, strncpy, 5)); mx_printstr("\n");
 
-//     mx_printstr("\n\n----------------MX_STRTRIM-------------------\n");
-//         char strtrim[] = " \f   My name... is Neo   \t\n ";
-//         char strtrim2[] = "My name... is Neo   \t\n ";
-//         char strtrim3[] = "           \t             \n ";
-//         char *cleared_trim = mx_strtrim(strtrim);
-//         char *cleared_trim2 = mx_strtrim(strtrim2);
-//         char *cleared_trim3 = mx_strtrim(strtrim3);
-//         mx_printstr("mx_strtrim return \"My name... is Neo\"? | "); mx_printstr(cleared_trim); mx_printstr("\n");
-//         mx_printstr("mx_strtrim return \"My name... is Neo\"? | "); mx_printstr(cleared_trim2); mx_printstr("\n");
-//         mx_printstr("mx_strtrim return \"\"? | "); printf("\"%s\"\n", cleared_trim3);
-//         mx_printstr("mx_strtrim return (null)? | "); printf("%s\n", mx_strtrim(NULL));
+    // mx_printstr("\n\n----------------MX_STRCMP-------------------\n");
+    //     char *strcmp1 = "aaaaaaa"; char *strcmp2 = "aaaaaaaA"; char *strcmp3 = "aaaaaaa";
+    //     mx_printstr("strcmp \t  return   \t   | "); mx_printint(strcmp(strcmp2, strcmp1));
+    //     mx_printstr("\nmx_strcmp return the same? | "); mx_printint(mx_strcmp(strcmp2, strcmp1)); mx_printstr("\n");
+    //     mx_printstr("strcmp \t  return   \t   | "); mx_printint(strcmp(strcmp1, strcmp2));
+    //     mx_printstr("\nmx_strcmp return the same? | "); mx_printint(mx_strcmp(strcmp1, strcmp2)); mx_printstr("\n");
+    //     mx_printstr("strcmp \t  return   \t   | "); mx_printint(strcmp(strcmp1, strcmp3));
+    //     mx_printstr("\nmx_strcmp return the same? | "); mx_printint(mx_strcmp(strcmp1, strcmp3)); mx_printstr("\n");
 
-//     mx_printstr("\n\n----------------MX_DEL_EXTRA_SPACES-------------------\n");
-//         char del_spaces[] = "\f    My name...      is    \r  Neo   \t\n ";
-//         char del_spaces2[] = "           \t             \n ";
-//         char *cleared_del_spaces = mx_del_extra_spaces(del_spaces), *cleared_del_spaces2 = mx_del_extra_spaces(del_spaces2);
-//         mx_printstr("mx_del_extra_spaces return \"My name... is Neo\"? | "); mx_printstr(cleared_del_spaces); mx_printstr("\n");
-//         mx_printstr("mx_del_extra_spaces return \"\"? | "); printf("\"%s\"\n", cleared_del_spaces2);
-//         mx_printstr("mx_del_extra_spaces return (null)? | "); printf("%s\n", mx_del_extra_spaces(NULL));
+    // mx_printstr("\n\n----------------MX_STRCAT-------------------\n");
+    //     char strcat1[10] = "12345"; char strcat2[5] = "6789";
+    //     char strcat3[10] = "12345"; char strcat4[5] = "6789";
+    //     mx_printstr("strcat \t  return   \t   | "); mx_printstr(strcat(strcat1, strcat2));
+    //     mx_printstr("\nmx_strcat return the same? | "); mx_printstr(mx_strcat(strcat3, strcat4)); mx_printstr("\n");
 
-//     mx_printstr("\n\n----------------MX_STRSPLIT-------------------\n");
-//         char strsplit[] = "**Good bye,**Mr.*Anderson.****";
-//         char **splited = mx_strsplit(strsplit, '*');
-//         char strsplit2[] = "       Knock, knock,         Neo.         ";
-//         char **splited2 = mx_strsplit(strsplit2, ' ');
-//         char **splited3 = mx_strsplit(NULL, ' ');
+// ERROR
+
+    // mx_printstr("\n\n----------------MX_STRSTR-------------------\n");
+    //     char *strstr1 = "12345679";
+    //     char *cmp = "5";
+    //     cmp = (char *)malloc(sizeof(char));
+    //     printf("strstr return \"%s\". mx_strstr return the same? | %s\n", strstr(strstr1, cmp), mx_strstr(strstr1, cmp));
+
+    // mx_printstr("\n\n----------------MX_GET_SUBSTR_INDEX-------------------\n");
+    //     mx_printstr("mx_get_substr_index \"2\"? | "); mx_printint(mx_get_substr_index("McDonalds", "Don")); mx_printstr("\n");
+    //     mx_printstr("mx_get_substr_index \"3\"? | "); mx_printint(mx_get_substr_index("McDonalds Donuts", "on")); mx_printstr("\n");
+    //     mx_printstr("mx_get_substr_index \"-1\"? | "); mx_printint(mx_get_substr_index("McDonalds", "Donatello")); mx_printstr("\n");
+    //     mx_printstr("mx_get_substr_index \"-2\"? | "); mx_printint(mx_get_substr_index("McDonalds", NULL)); mx_printstr("\n");
+    //     mx_printstr("mx_get_substr_index \"-2\"? | "); mx_printint(mx_get_substr_index(NULL, "Don")); mx_printstr("\n");
+
+//  ERROR
+
+    // write(1, "\n\n----------------MX_COUNT_SUBSTR-------------------\n", 53);
+    //     char *count_substr = "yo, yo, yo Neo";
+    //     mx_printstr("mx_count_substr return \"3\"? | "); mx_printint(mx_count_substr(count_substr, "yo")); mx_printstr("\n");
+    //     mx_printstr("mx_count_substr return \"-1\"? (null's check) | "); mx_printint(mx_count_substr(count_substr, "")); mx_printstr("\n");
+    //     mx_printstr("mx_count_substr return \"-1\"? (null's check) | "); mx_printint(mx_count_substr("", "yo")); mx_printstr("\n");
+
+// ERROR
+
+    // mx_printstr("\n\n----------------MX_COUNT_WORDS-------------------\n");
+    //     char *count_words = "   follow  *    the   white   rabbit";
+    //     mx_printstr("mx_count_words return \"2\"? | "); mx_printint(mx_count_words(count_words, '*')); mx_printstr("\n");
+    //     mx_printstr("mx_count_words return \"5\"? | "); mx_printint(mx_count_words(count_words, ' ')); mx_printstr("\n");
+    //     mx_printstr("mx_count_words return \"-1\"? (null's check) | "); mx_printint(mx_count_words(NULL, ' ')); mx_printstr("\n");
+
+
+
+    // mx_printstr("\n\n----------------MX_STRNEW-------------------\n");
+    //     char *strnew = mx_strnew(5);
+    //     mx_printstr("mx_strnew return \"^@^@^@^@^@$\"? (check with cat -e) | "); write( 1, strnew, 5); mx_printstr("\n");
+
+    // mx_printstr("\n\n----------------MX_STRTRIM-------------------\n");
+    //     char strtrim[] = " \f   My name... is Neo   \t\n ";
+    //     char strtrim2[] = "My name... is Neo   \t\n ";
+    //     char strtrim3[] = "           \t             \n ";
+    //     char *cleared_trim = mx_strtrim(strtrim);
+    //     char *cleared_trim2 = mx_strtrim(strtrim2);
+    //     char *cleared_trim3 = mx_strtrim(strtrim3);
+    //     mx_printstr("mx_strtrim return \"My name... is Neo\"? | "); mx_printstr(cleared_trim); mx_printstr("\n");
+    //     mx_printstr("mx_strtrim return \"My name... is Neo\"? | "); mx_printstr(cleared_trim2); mx_printstr("\n");
+    //     mx_printstr("mx_strtrim return \"\"? | "); printf("\"%s\"\n", cleared_trim3);
+    //     mx_printstr("mx_strtrim return (null)? | "); printf("%s\n", mx_strtrim(NULL));
+
+    // mx_printstr("\n\n----------------MX_DEL_EXTRA_SPACES-------------------\n");
+    //     char del_spaces[] = "\f    My name...      is    \r  Neo   \t\n ";
+    //     char del_spaces2[] = "           \t             \n ";
+    //     char *cleared_del_spaces = mx_del_extra_spaces(del_spaces), *cleared_del_spaces2 = mx_del_extra_spaces(del_spaces2);
+    //     mx_printstr("mx_del_extra_spaces return \"My name... is Neo\"? | "); mx_printstr(cleared_del_spaces); mx_printstr("\n");
+    //     mx_printstr("mx_del_extra_spaces return \"\"? | "); printf("\"%s\"\n", cleared_del_spaces2);
+    //     mx_printstr("mx_del_extra_spaces return (null)? | "); printf("%s\n", mx_del_extra_spaces(NULL));
+
+// ERROR
+
+    mx_printstr("\n\n----------------MX_STRSPLIT-------------------\n");
+        char strsplit[] = "**Good bye,**Mr.*Anderson.****";
+        char **splited = mx_strsplit(strsplit, '*');
+        char strsplit2[] = "       Knock, knock,         Neo.         ";
+        char **splited2 = mx_strsplit(strsplit2, ' ');
+        char **splited3 = mx_strsplit(NULL, ' ');
 
 //         mx_printstr("mx_strsolit return is \"Good bye,\" \"Mr.\" \"Anderson.\" (null)? | "); printf("\"%s\"  \"%s\"  \"%s\" \"%s\"\n", splited[0], splited[1], splited[2], splited[3]);
 //         mx_printstr("mx_strsolit return is \"Knock,\" \"knock,\" \"Neo.\" (null)? | "); printf("\"%s\"  \"%s\"  \"%s\" \"%s\"\n", splited2[0], splited2[1], splited2[2], splited2[3]);

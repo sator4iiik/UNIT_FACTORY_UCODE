@@ -1,4 +1,4 @@
-#include "hex_to_nbr.h"
+#include "libmx.h"
 
 bool mx_isdigit(int c) {
     if( c >= 48 && c <= 57) {
@@ -11,4 +11,4 @@ bool mx_isdigit(int c) {
 
 //int main() {
 //    printf(d%, mx_isdigit(3));
-//} 
+//}
