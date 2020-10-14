@@ -198,7 +198,6 @@ int main(void) {
     //     mx_printstr("strcat \t  return   \t   | "); mx_printstr(strcat(strcat1, strcat2));
     //     mx_printstr("\nmx_strcat return the same? | "); mx_printstr(mx_strcat(strcat3, strcat4)); mx_printstr("\n");
 
-// ERROR
 
     // mx_printstr("\n\n----------------MX_STRSTR-------------------\n");
     //     char *strstr1 = "12345679";
@@ -215,11 +214,11 @@ int main(void) {
 
 //  ERROR
 
-    // write(1, "\n\n----------------MX_COUNT_SUBSTR-------------------\n", 53);
-    //     char *count_substr = "yo, yo, yo Neo";
-    //     mx_printstr("mx_count_substr return \"3\"? | "); mx_printint(mx_count_substr(count_substr, "yo")); mx_printstr("\n");
-    //     mx_printstr("mx_count_substr return \"-1\"? (null's check) | "); mx_printint(mx_count_substr(count_substr, "")); mx_printstr("\n");
-    //     mx_printstr("mx_count_substr return \"-1\"? (null's check) | "); mx_printint(mx_count_substr("", "yo")); mx_printstr("\n");
+//     write(1, "\n\n----------------MX_COUNT_SUBSTR-------------------\n", 53);
+//         char *count_substr = "yo, yo, yo Neo";
+//         mx_printstr("mx_count_substr return \"3\"? | "); mx_printint(mx_count_substr(count_substr, "yo")); mx_printstr("\n");
+//         mx_printstr("mx_count_substr return \"-1\"? (null's check) | "); mx_printint(mx_count_substr(count_substr, "")); mx_printstr("\n");
+//         mx_printstr("mx_count_substr return \"-1\"? (null's check) | "); mx_printint(mx_count_substr("", "yo")); mx_printstr("\n");
 
 // ERROR
 
@@ -255,112 +254,111 @@ int main(void) {
     //     mx_printstr("mx_del_extra_spaces return \"\"? | "); printf("\"%s\"\n", cleared_del_spaces2);
     //     mx_printstr("mx_del_extra_spaces return (null)? | "); printf("%s\n", mx_del_extra_spaces(NULL));
 
-// ERROR
 
-    mx_printstr("\n\n----------------MX_STRSPLIT-------------------\n");
-        char strsplit[] = "**Good bye,**Mr.*Anderson.****";
-        char **splited = mx_strsplit(strsplit, '*');
-        char strsplit2[] = "       Knock, knock,         Neo.         ";
-        char **splited2 = mx_strsplit(strsplit2, ' ');
-        char **splited3 = mx_strsplit(NULL, ' ');
+    // mx_printstr("\n\n----------------MX_STRSPLIT-------------------\n");
+    //     char strsplit[] = "**Good bye,**Mr.*Anderson.****";
+    //     char **splited = mx_strsplit(strsplit, '*');
+    //     char strsplit2[] = "       Knock, knock,         Neo.         ";
+    //     char **splited2 = mx_strsplit(strsplit2, ' ');
+    //     char **splited3 = mx_strsplit(NULL, ' ');
 
-//         mx_printstr("mx_strsolit return is \"Good bye,\" \"Mr.\" \"Anderson.\" (null)? | "); printf("\"%s\"  \"%s\"  \"%s\" \"%s\"\n", splited[0], splited[1], splited[2], splited[3]);
-//         mx_printstr("mx_strsolit return is \"Knock,\" \"knock,\" \"Neo.\" (null)? | "); printf("\"%s\"  \"%s\"  \"%s\" \"%s\"\n", splited2[0], splited2[1], splited2[2], splited2[3]);
+    //     mx_printstr("mx_strsolit return is \"Good bye,\" \"Mr.\" \"Anderson.\" (null)? | "); printf("\"%s\"  \"%s\"  \"%s\" \"%s\"\n", splited[0], splited[1], splited[2], splited[3]);
+    //     mx_printstr("mx_strsolit return is \"Knock,\" \"knock,\" \"Neo.\" (null)? | "); printf("\"%s\"  \"%s\"  \"%s\" \"%s\"\n", splited2[0], splited2[1], splited2[2], splited2[3]);
 
-//         mx_printstr("mx_strsolit return is \"Good bye,\" \"Mr.\" \"Anderson.\" (null)? | "); printf("\"%s\"  \"%s\"  \"%s\" \"%s\"\n", splited[0], splited[1], splited[2], splited[3]);
-//         mx_printstr("mx_strsolit return is \"Knock,\" \"knock,\" \"Neo.\" (null)? | "); printf("\"%s\"  \"%s\"  \"%s\" \"%s\"\n", splited2[0], splited2[1], splited2[2], splited2[3]);
+    //     mx_printstr("mx_strsolit return is \"Good bye,\" \"Mr.\" \"Anderson.\" (null)? | "); printf("\"%s\"  \"%s\"  \"%s\" \"%s\"\n", splited[0], splited[1], splited[2], splited[3]);
+    //     mx_printstr("mx_strsolit return is \"Knock,\" \"knock,\" \"Neo.\" (null)? | "); printf("\"%s\"  \"%s\"  \"%s\" \"%s\"\n", splited2[0], splited2[1], splited2[2], splited2[3]);
 
-//         mx_printstr("mx_strsolit return (null)? | "); printf("%s\n", (char *)splited3);
+    //     mx_printstr("mx_strsolit return (null)? | "); printf("%s\n", (char *)splited3);
 
-//     mx_printstr("\n\n----------------MX_STRJOIN-------------------\n");
-//         char *strjoin1 = "this", *strjoin2 = "dodge ", *strjoin3 = NULL;
-//         char *strjoin_result1 = mx_strjoin(strjoin2, strjoin1);
-//         char *strjoin_result2 = mx_strjoin(strjoin1, strjoin3);
-//         char *strjoin_result3 = mx_strjoin(strjoin3, strjoin2);
-//         char *strjoin_result4 = mx_strjoin(strjoin3, strjoin3);
-//         mx_printstr("mx_strjoin return \"dodge this\"? | "); mx_printstr(strjoin_result1); mx_printstr("\n");
-//         mx_printstr("mx_strjoin return \"this\"? | "); mx_printstr(strjoin_result2); mx_printstr("\n");
-//         mx_printstr("mx_strjoin return \"dodge \"? | "); mx_printstr(strjoin_result3); mx_printstr("\n");
-//         mx_printstr("mx_strjoin return \"(null)\"? | "); printf("%s\n", strjoin_result4);
+    // mx_printstr("\n\n----------------MX_STRJOIN-------------------\n");
+    //     char *strjoin1 = "this", *strjoin2 = "dodge ", *strjoin3 = NULL;
+    //     char *strjoin_result1 = mx_strjoin(strjoin2, strjoin1);
+    //     char *strjoin_result2 = mx_strjoin(strjoin1, strjoin3);
+    //     char *strjoin_result3 = mx_strjoin(strjoin3, strjoin2);
+    //     char *strjoin_result4 = mx_strjoin(strjoin3, strjoin3);
+    //     mx_printstr("mx_strjoin return \"dodge this\"? | "); mx_printstr(strjoin_result1); mx_printstr("\n");
+    //     mx_printstr("mx_strjoin return \"this\"? | "); mx_printstr(strjoin_result2); mx_printstr("\n");
+    //     mx_printstr("mx_strjoin return \"dodge \"? | "); mx_printstr(strjoin_result3); mx_printstr("\n");
+    //     mx_printstr("mx_strjoin return \"(null)\"? | "); printf("%s\n", strjoin_result4);
 
-//     mx_printstr("\n\n----------------MX_FILE_TO_STR-------------------\n"); // HOW TO CHECK??????????
-//         mx_printstr("check function with ./a.out src/mx_strlen.c\n");
-//         if (argc > 1) {
-//             char *file_to_str = mx_file_to_str(argv[1]);
-//             mx_printstr(file_to_str);
-//         }
+    // mx_printstr("\n\n----------------MX_FILE_TO_STR-------------------\n"); // HOW TO CHECK??????????
+    //     mx_printstr("check function with ./liba.a src/mx_strlen.c\n");
+    //     if (argc > 1) {
+    //         char *file_to_str = mx_file_to_str(argv[1]);
+    //         mx_printstr(file_to_str);
+    //     }
 
-//     mx_printstr("\n\n----------------MX_READ_LINE-------------------\n"); // CORRECT IT !!!!!!
+    mx_printstr("\n\n----------------MX_READ_LINE-------------------\n"); // CORRECT IT !!!!!!
 
-//         int fd = open("fragment", O_RDONLY);
-//         char *lineptr1 = NULL;
-//         int res1;
-//         res1 = mx_read_line(&lineptr1, 20, 'f', fd);
-//         printf("\nres1 = %d\nlineptr1 = %s|\n\n", res1, lineptr1);
-//         printf("==============================================\n");
-//         char *lineptr2 = NULL;
-//         int res2;
-//         res2 = mx_read_line(&lineptr2, 35, 't', fd);
-//         printf("\nres2 = %d\nlineptr2 = %s|\n\n", res2, lineptr2);
-//         printf("==============================================\n");
-//         char *lineptr3 = NULL;
-//         int res3;
-//         res3 = mx_read_line(&lineptr3, 4, '.', fd);
-//         printf("\nres3 = %d\nlineptr3 = %s|\n\n", res3, lineptr3);
-//         printf("==============================================\n");
-//         char *lineptr4 = NULL;
-//         int res4;
-//         res4 = mx_read_line(&lineptr4, 4, 'a', fd);
-//         printf("\nres4 = %d\nlineptr4 = %s|\n\n", res4, lineptr4);
-//         printf("==============================================\n");
-//         char *lineptr5 = NULL;
-//         int res5;
-//         res5 = mx_read_line(&lineptr5, 4, 'a', fd);
-//         printf("\nres5 = %d\nlineptr5 = %s|\n\n", res5, lineptr5);
-//         printf("==============================================\n");
-//         close(fd);
-//         mx_printstr("\n");
+        int fd = open("fragment", O_RDONLY);
+        char *lineptr1 = NULL;
+        int res1;
+        res1 = mx_read_line(&lineptr1, 20, 'f', fd);
+        printf("\nres1 = %d\nlineptr1 = %s|\n\n", res1, lineptr1);
+        printf("==============================================\n");
+        char *lineptr2 = NULL;
+        int res2;
+        res2 = mx_read_line(&lineptr2, 35, 't', fd);
+        printf("\nres2 = %d\nlineptr2 = %s|\n\n", res2, lineptr2);
+        printf("==============================================\n");
+        char *lineptr3 = NULL;
+        int res3;
+        res3 = mx_read_line(&lineptr3, 4, '.', fd);
+        printf("\nres3 = %d\nlineptr3 = %s|\n\n", res3, lineptr3);
+        printf("==============================================\n");
+        char *lineptr4 = NULL;
+        int res4;
+        res4 = mx_read_line(&lineptr4, 4, 'a', fd);
+        printf("\nres4 = %d\nlineptr4 = %s|\n\n", res4, lineptr4);
+        printf("==============================================\n");
+        char *lineptr5 = NULL;
+        int res5;
+        res5 = mx_read_line(&lineptr5, 4, 'a', fd);
+        printf("\nres5 = %d\nlineptr5 = %s|\n\n", res5, lineptr5);
+        printf("==============================================\n");
+        close(fd);
+        mx_printstr("\n");
 
-//         int fd = open("fragment", O_RDONLY);
-//         char *lineptr1 = NULL;
-//         int res1;
-//         res1 = mx_read_line(&lineptr1, 20, 'f', fd);
-//         printf("\nres1 = %d\nlineptr1 = %s|\n\n", res1, lineptr1);
-//         printf("==============================================\n");
-//         char *lineptr2 = NULL;
-//         int res2;
-//         res2 = mx_read_line(&lineptr2, 35, 't', fd);
-//         printf("\nres2 = %d\nlineptr2 = %s|\n\n", res2, lineptr2);
-//         printf("==============================================\n");
-//         char *lineptr3 = NULL;
-//         int res3;
-//         res3 = mx_read_line(&lineptr3, 4, '.', fd);
-//         printf("\nres3 = %d\nlineptr3 = %s|\n\n", res3, lineptr3);
-//         printf("==============================================\n");
-//         char *lineptr4 = NULL;
-//         int res4;
-//         res4 = mx_read_line(&lineptr4, 4, 'a', fd);
-//         printf("\nres4 = %d\nlineptr4 = %s|\n\n", res4, lineptr4);
-//         printf("==============================================\n");
-//         char *lineptr5 = NULL;
-//         int res5;
-//         res5 = mx_read_line(&lineptr5, 4, 'a', fd);
-//         printf("\nres5 = %d\nlineptr5 = %s|\n\n", res5, lineptr5);
-//         printf("==============================================\n");
-//         close(fd);
-//         mx_printstr("\n");
+        int fd = open("fragment", O_RDONLY);
+        char *lineptr1 = NULL;
+        int res1;
+        res1 = mx_read_line(&lineptr1, 20, 'f', fd);
+        printf("\nres1 = %d\nlineptr1 = %s|\n\n", res1, lineptr1);
+        printf("==============================================\n");
+        char *lineptr2 = NULL;
+        int res2;
+        res2 = mx_read_line(&lineptr2, 35, 't', fd);
+        printf("\nres2 = %d\nlineptr2 = %s|\n\n", res2, lineptr2);
+        printf("==============================================\n");
+        char *lineptr3 = NULL;
+        int res3;
+        res3 = mx_read_line(&lineptr3, 4, '.', fd);
+        printf("\nres3 = %d\nlineptr3 = %s|\n\n", res3, lineptr3);
+        printf("==============================================\n");
+        char *lineptr4 = NULL;
+        int res4;
+        res4 = mx_read_line(&lineptr4, 4, 'a', fd);
+        printf("\nres4 = %d\nlineptr4 = %s|\n\n", res4, lineptr4);
+        printf("==============================================\n");
+        char *lineptr5 = NULL;
+        int res5;
+        res5 = mx_read_line(&lineptr5, 4, 'a', fd);
+        printf("\nres5 = %d\nlineptr5 = %s|\n\n", res5, lineptr5);
+        printf("==============================================\n");
+        close(fd);
+        mx_printstr("\n");
 
-//         system("leaks -q a.out");
+        system("leaks -q liba");
 
-// res = mx_read_line(&str, 20, 'f', fd) //res = 25, str = "The hotel was abandoned a"
+char res = mx_read_line(&str, 20, 'f', fd); //res = 25, str = "The hotel was abandoned a"
 //                                                         The hotel was abandoned a
-// res = mx_read_line(&str, 35, 't', fd) //res = 0, str = ""
-// res = mx_read_line(&str, 4, '.', fd) //res = 163
+char res = mx_read_line(&str, 35, 't', fd); //res = 0, str = ""
+char res = mx_read_line(&str, 4, '.', fd); //res = 163
 
-// str = "er a fire licked its way across\n
-// the polyester carpeting, destroying several rooms as it\n
-// spooled soot up the walls and ceiling, leaving patterns of\n
-// permanent shadow"
+char str = "er a fire licked its way across\n
+the polyester carpeting, destroying several rooms as it\n
+spooled soot up the walls and ceiling, leaving patterns of\n
+permanent shadow";
 
 // The hotel was abandoned after a fire licked its way across
 // the polyester carpeting, destroying several rooms as it
