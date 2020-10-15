@@ -1,6 +1,6 @@
 #include "libmx.h"
 
-void *mem_memmem(const void *big, size_t big_len, const void *little,
+void *mx_memmem(const void *big, size_t big_len, const void *little,
                 size_t little_len) {
     unsigned char *tmp_big = NULL;
     unsigned char *tmp_little = NULL;

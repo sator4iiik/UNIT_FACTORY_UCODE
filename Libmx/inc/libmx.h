@@ -50,17 +50,17 @@ typedef struct s_list {
 }               t_list;
 
 
-typedef struct read_line {
-    char delim;
-    int chars;
-    int index;
-    char *buf;
-    size_t k;
-    size_t j;
-    int flag;
-    int sum;
-    int fd;
-}   r_line;
+// typedef struct read_line {
+//     char delim;
+//     int chars;
+//     int index;
+//     char *buf;
+//     size_t k;
+//     size_t j;
+//     int flag;
+//     int sum;
+//     int fd;
+// }   r_line;
 
 /////////-UTILS PACK-///14//////
 

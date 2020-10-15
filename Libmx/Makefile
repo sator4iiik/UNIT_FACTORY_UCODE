@@ -1,5 +1,5 @@
 NAME = libmx.a
-NAMEBIN = liba
+# NAMEBIN = liba
 
 SRC_DIR = src
 OBJ_DIR = obj
@@ -22,7 +22,7 @@ all: $(NAME)
 
 $(NAME): $(OBJ_FILES)
 	@$(AR) $(AFLAGS) $@ $^
-	@$(CC) $(CFLAGS) $@ $^ -o $(NAMEBIN)
+	# @$(CC) $(CFLAGS) $@ $^ -o $(NAMEBIN)
 	@printf "\r\33[2K$@\t \033[32;1mcreated\033[0m\n"
 
 $(OBJ_FILES): | $(OBJ_DIR)
@@ -45,7 +45,7 @@ clean:
 uninstall:
 	@$(RM) $(OBJ_DIR)
 	@$(RM) $(NAME)
-	@$(RM) $(NAMEBIN)
+	# @$(RM) $(NAMEBIN)
 	@@printf "$(NAME)\t \033[31;1muninstalled\033[0m\n"
 
 reinstall: uninstall all

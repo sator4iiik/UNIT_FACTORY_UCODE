@@ -2,11 +2,15 @@
 
 int mx_count_substr(const char *str, const char *sub) {
     int count = 0;
-    int len1 = mx_strlen(str);
-    int len2 = mx_strlen(sub);
+    const char *buffer = str;
 
-    for (int i = 0; i+len2<=len1; i++)
-        if (!mx_strncmp(str+i,sub,len2))
-            count++;
+    if (str == NULL || sub == NULL)
+        return -1;
+    if (mx_strlen(str) == 0 || mx_strlen(sub) == 0)
+        return 0;
+    while ((buffer = mx_strstr(buffer, sub)) != 0) {
+        buffer++;
+        count++;
+    }
     return count;
 }
