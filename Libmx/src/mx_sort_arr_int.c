@@ -13,5 +13,5 @@ void mx_sort_arr_int(int *arr, int size) {
             count += 1;
         }
     }
-    printf("COUNT = %i\n", count);
+    // printf("COUNT = %i\n", count);
 }
