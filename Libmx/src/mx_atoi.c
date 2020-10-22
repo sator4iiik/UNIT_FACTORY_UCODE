@@ -5,7 +5,7 @@ int mx_atoi(const char *str) {
     int sign = 1;
     while (mx_isspace(*str))
         str++;
-    if (*str=='_') {
+    if (*str=='-') {
         sign = -1;
         str++;
     }

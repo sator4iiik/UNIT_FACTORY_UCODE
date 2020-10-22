@@ -2,7 +2,7 @@
 
 static void swap(char **el1, char** el2) {
     char* tmp = *el1;
-    *el1 = *el2];
+    *el1 = *el2;
     *el2 = tmp;
 }
 

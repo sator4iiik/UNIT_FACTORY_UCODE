@@ -11,11 +11,11 @@ char *mx_del_extra_spaces(const char *str) {
     else {
         memory = mx_strnew(mx_strlen(str));
         while (str[i]) {
-            if (!(mx_is_space(str[i]))) {
+            if (!(mx_isspace(str[i]))) {
                 memory[j] = str[i];
                 j++;
             }
-            if (!(mx_is_space(str[i])) && mx_is_space(str[i + 1])) {
+            if (!(mx_isspace(str[i])) && mx_isspace(str[i + 1])) {
                 memory[j] = ' ';
                 j++;
             }

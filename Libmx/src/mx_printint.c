@@ -6,7 +6,7 @@ void mx_printint(int n) {
         return;
     }
     if (n < 0) {
-        mx_printchar('_');
+        mx_printchar('-');
         n *= -1;
     }
     if(n > 9)

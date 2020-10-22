@@ -76,7 +76,7 @@ int mx_read_line(char **lineptr, size_t buf_size, char delim, const int fd) {
     static char *leftovers;
     char buff[buf_size];
 
-    buff[buf_size -1];
+    buff[buf_size] = '\0';
     l_count = mx_parse_leftovers(&leftovers, &lineptr, delim);
     lptr_check = (l_count > 0);
     if (leftovers)
