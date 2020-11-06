@@ -1,7 +1,7 @@
 #include "pathfinder.h"
 
 void mx_wrong_args_or_file(int argc, char *argv[], t_finder *path) {
-    if (argc != 2) {
+    if (argc >= 2) {
         mx_printerr("usage: ./pathfinder [filename]\n");
         exit(1);
     }
