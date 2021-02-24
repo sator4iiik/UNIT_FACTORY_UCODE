@@ -4,8 +4,8 @@
 #         8' .8 8P   8.dP'  dP  8P Y8 8 88b  8' .8  YbdP
 #         `Y8P' 8    `Y88P d888 8   8 8 8 Yb `Y8P'   YP
 
-NAME = morse
-NAMEBIN = morse
+NAME = cesar
+NAMEBIN = cesar
 
 SRC_DIR = src
 OBJ_DIR = obj
@@ -34,7 +34,7 @@ $(NAME): $(OBJ_FILES)
 $(OBJ_FILES): | $(OBJ_DIR)
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c $(INC_FILES)
-	@$(CC) $(CFLAGS) -c $< -o $@ -I $(INC_DIR) 
+	@$(CC) $(CFLAGS) -c $< -o $@ -I $(INC_DIR)
 	@printf "\r\33[2K$(NAME)\033[33;1m\t compile \033[0m$(<:$(SRC_DIR)/%.c=%)\r"
 
 $(OBJ_DIR):
