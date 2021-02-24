@@ -23,6 +23,7 @@
 .- -. -..       .. -       .... .- ...       - .... .       ... .- -- .
        . .-. .-. --- .-.       .... .- -. -.. .-.. .. -. --.       .-. ..- .-.. . ...
        . -..- -.-. . .--. -       -... .. -. .- .-. -.--       -. .- -- . .....
+       
 
        hello again the one. the next cipher uses a reverse alphabet. the cipher
        is a substitution cipher with a specific key where the order of the
@@ -30,3 +31,11 @@
        and so on.it was originally used for the hebrewalphabet but can be used
        for any alphabet.binary for the next task must be named atbash.
        and it has the same error handling rules except binary name.
+
+
+        привет еще раз тот. следующий шифр использует обратный алфавит. шифр
+        шифр подстановки с определенным ключом, где порядок
+        алфавит перевернут. т.е. все a заменяются на z. все b заменяются на y.
+        и т. д. изначально он использовался для еврейского алфавита, но может использоваться
+        для любого алфавита. двоичный файл для следующей задачи должен иметь имя atbash.
+        и он имеет те же правила обработки ошибок, за исключением двоичного имени.

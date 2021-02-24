@@ -15,3 +15,39 @@ Kvivgl kivhgl kldvi
 Pzinz wvmaz kfiiz pzdz plmmrxsrdz-fz
 
 Tllw ofxp!
+
+For example, let the key be three.
+Then the letter A of the English alphabet will be replaced by the letter D,
+the letter B by the letter E, and so on.
+Use this cipher with a shift of three, like Julius Caesar when writing military messages.
+Don't forget about binary. It must be named caesar.
+And the current program has to have the same error handling rules with the text
+"usage: ./caesar "str" "key"".
+
+Also, here is a first verse of the LITTLE BIG song Faradenza:
+Denza Faradenza
+La bokka de la cokka
+Grande love-ua and ribaua villa vida loca
+Gusto rico dante
+Pereto presto power
+Karma denza purra kawa konnichiwa-ua
+
+Good luck!
+
+Например, пусть ключ будет три.
+Тогда буква А английского алфавита будет заменена буквой D,
+букву Б буквой Е и так далее.
+Используйте этот шифр со сдвигом три, как Юлий Цезарь при написании военных сообщений.
+Не забывайте о двоичном формате. Его нужно назвать цезарем.
+И текущая программа должна иметь те же правила обработки ошибок с текстом
+"использование: ./caesar "str" "ключ"".
+
+Также, вот первый куплет LITTLE BIG песни Faradenza:
+Денза Фараденца
+Ла бокка де ла кокка
+Grande love-ua и рибауа вилла vida loca
+Густо рико данте
+Pereto presto power
+Karma denza purra kawa konnichiwa-ua
+
+Удачи!

@@ -7,3 +7,23 @@ yb z xvigzrm xszizxgvi urcvw rm gsrh pvb lu gsv hznv zokszyvg.
 Pvb hvovxgrlm nvgslwh nzb ezib. Gsv pvb rm Xzvhzi'h xrksvi rh zm ziyrgizib mfnyvi 'p',
 hvovxgvw rm gsv izmtv uiln lmv gl gdvmgb-urev. Vzxs ovggvi lu gsv kozrmgvcg rh ivkozxvw
 yb z ovggvi gszg rh 'p' xszizxgvih ufigsvi gszm rg rh rm gsv zokszyvg.
+
+Et tu, Brute?
+The cipher is named for the Roman commander Guy Julius Caesar, who used it for
+secret correspondence with his generals.
+The cipher belongs to the group of so-called single-alphabetical wildcard ciphers.
+When using the ciphers of this group, each character of the plaintext is replaced
+by a certain character fixed in this key of the same alphabet.
+Key selection methods may vary. The key in Caesar's cipher is an arbitrary number 'k',
+selected in the range from one to twenty-five. Each letter of the plaintext is replaced
+by a letter that is 'k' characters further than it is in the alphabet.
+
+Et tu, Brute?
+Шифр назван в честь римского полководца Гая Юлия Цезаря, который использовал его для
+тайной переписки с его генералами.
+Шифр принадлежит к группе так называемых одноалфавитных шифров с подстановочными знаками.
+При использовании шифров этой группы каждый символ открытого текста заменяется
+определенным символом, закрепленным в этой клавише того же алфавита.
+Ключевые методы выбора могут отличаться. Ключом в шифре Цезаря является произвольное число k,
+выбирается в диапазоне от одного до двадцати пяти. Каждая буква открытого текста заменяется
+буквой, которая на k символов дальше, чем в алфавите.

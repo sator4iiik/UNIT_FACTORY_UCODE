@@ -12,14 +12,13 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
+bool mx_isupper(int c);
+bool mx_islower(int c);
+bool mx_isalpha(int c);
+bool mx_isspace(char c);
+
 void mx_printstr(const char *s);
 void mx_printerr(const char *s);
-
-bool mx_isspace(char c);
-bool mx_isupper(int c);
-bool mx_isalpha(int c);
-bool mx_islower(int c);
-
 
 /////////////--STR--//////////////
 char* mx_strnew(const int size);
