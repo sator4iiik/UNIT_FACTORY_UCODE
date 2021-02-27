@@ -1,9 +1,8 @@
 #include "../inc/caesar.h"
 
-bool mx_islower() {
+bool mx_islower(int c) {
     if (c >= 97 && c <= 122)
-	return true;
+        return true;
     else
-	return false;
+        return false;
 }
-
