@@ -1,10 +1,33 @@
-Fmezl gzvm yfktmet wozz b tolr. Bed mifiy kbev tznojligfj tw n dyazndkez ssfm
-gbvi atcirbmg. Zfu evmc nwg ovel nop kml gfr bujj.
-Hwjfmez, lpl spbvcd sapn tpnu khm nmghiofk ywh xzlt afvd pnt lnqdvv cwqfj
-fwe fmezl mvtbrs.
-Tazrgll, jrdruar uyezr bie bjp kyxrt ff Jndfnqno rlxubseb gbslmf, zfu vrfu tpr pee
-eufie q nou j pnwv teb ezfnrsvnb ppuea. Gp jpqpf khqahj ux, jf yadr budmq tfmm
-zpie alnsotf uf tpr tkavqbid Jndfnqno rlxubseb. Ngkez m, uyezr jj a kbev fwe b
-jpipf (“ ”) - SBIOB, r pmejfd (“.”) - JOBSB, iae r cwznr (“,”) - BJOBR.
+Fmezl gzvm yfktmet wozz b tolr. Bed mifiy kbev tznojligfj tw n dyazndkez
+ssfm gbvi atcirbmg. Zfu evmc nwg ovel nop kml gfr bujj.
+Hwjfmez, lpl spbvcd sapn tpnu khm nmghiofk ywh xzlt afvd pnt lnqdvv
+cwqfj fwe fmezl mvtbrs.
+Tazrgll, jrdruar uyezr bie bjp kyxrt ff Jndfnqno rlxubseb gbslmf, zfu
+vrfu tpr pee eufie q nou j pnwv teb ezfnrsvnb ppuea. Gp jpqpf khqahj ux,
+jf yadr budmq tfmm zpie alnsotf uf tpr tkavqbid Jndfnqno rlxubseb.
+Ngkez m, uyezr jj a kbev fwe b jpipf (“ ”) - SBIOB,
+r pmejfd (“.”) - JOBSB, iae r cwznr (“,”) - BJOBR.
 Tpr dyazndkezf uyab qpe’t pnwv a kbev azr jxnwefu.
 Bqabiy nbs khqf urss zvjt jr drltre "sakbozav".
+
+Every five letters form a code. And every code translates to a character
+from your alphabet. You will not need any key for this. However, you
+should know that the alphabet you will need has unique codes for every
+letter. Careful, because there are two types of Baconian alphabet tables,
+you need the one where i and j have two different codes. To spice things
+up, we have added some more symbols to the standard Baconian alphabet.
+After z, there is a code for a space (“ ”) - BBABA,
+a period (“.”) - BBABB, and a comma (“,”) - BBBAA. The characters that
+don’t have a code are ignored. Binary for this task must be called
+baconian.
+
+Каждые пять букв образуют код. И каждый код переводится в символ
+из вашего алфавита. Для этого вам не понадобится никакой ключ. Однако вы
+должны знать, что алфавит, который вам понадобится, имеет уникальные
+коды для каждого письмо. Будьте осторожны, поскольку существует два типа
+таблиц бэконовского алфавита, вам нужен тот, где i и j имеют два разных
+кода. Приправить вещи вверх, мы добавили еще несколько символов к
+стандартному бэконовскому алфавиту. После z идет код пробела
+(«») - BBABA, точка («.») - BBABB, а запятая («,») - BBBAA.
+Персонажи, которые не имеют кода игнорируются. Бинарный файл для этой
+задачи должен называться baconian.

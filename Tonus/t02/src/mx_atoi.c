@@ -4,6 +4,7 @@ int mx_atoi(const char *str) {
     int sign = 1;
     int i = 0;
     int res = 0;
+
     while (mx_isspace(str[i])) {
 	i++;
     }
@@ -21,3 +22,5 @@ int mx_atoi(const char *str) {
     }
     return res*sign;
 }
+
+
