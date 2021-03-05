@@ -45,3 +45,6 @@ AABAB ABABAAABAABAAABABABBABAAAA
 [AABAB|ABABA|AABAA|BAAAB|ABABB|ABAAA|A....]
    F     L     E     S     M     I    ...    v1
    F     K     E     R     L     I    ...    v2
+   
+А (а) → AAAAA Б (а) → AAAAB В (а) → AAABA Г (а) → AAABB Д (а) → AABAA Е (е) / Ё (ё) → AABAB Ж (ж) → AABBA З (з) → AABBB И (и) → ABAAA Й (й) → ABAAB К (к) → ABABA Л (л) → ABABB М (м) → ABBAA Н (н) → ABBAB О (о) → ABBBA П (п) → ABBBB Р (р) → BAAAA С (с) → BAAAB Т (т) → BAABA У (у) → BAABB Ф (ф) → BABAA Х (х) → BABAB Ц (ц) → BABBA Ч (ч) → BABBB Ш (ш) → BBAAA Щ (щ) → BBAAB Ъ (ъ) → BBABA Ы (ы) → BBABB Ь (ь) → BBBAA Э (э) → BBBAB Ю (ю) → BBBBA Я (я) → BBBBB
+
