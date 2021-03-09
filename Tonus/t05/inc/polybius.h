@@ -1,5 +1,5 @@
-#ifndef ATBASH_H
-#define ATBASH_H
+#ifndef POLYBIUS_H
+#define POLYBIUS_H
 
 /*                                                 2021
  *                                  w 8
@@ -8,20 +8,13 @@
  *      `Y8P' 8    `Y88P d888 8   8 8 8 Yb `Y8P'   YP
  */
 
+#include <stdlib.h>
 #include <unistd.h>
 #include <stdbool.h>
-#include <stdlib.h>
 
-bool mx_isupper(int c);
-bool mx_islower(int c);
 bool mx_isalpha(int c);
-bool mx_isspace(char c);
-
-void mx_printstr(const char *s);
-void mx_printerr(const char *s);
-
-/////////////--STR--//////////////
-char* mx_strnew(const int size);
+void mx_printchar(char c);
 int mx_strlen(const char *s);
+void mx_printerr(const char *s);
 
 #endif
