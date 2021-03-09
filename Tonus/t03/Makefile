@@ -34,7 +34,7 @@ $(NAME): $(OBJ_FILES)
 $(OBJ_FILES): | $(OBJ_DIR)
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c $(INC_FILES)
-	@$(CC) $(CFLAGS) -c $< -o $@ -I $(INC_DIR) 
+	@$(CC) $(CFLAGS) -c $< -o $@ -I $(INC_DIR)
 	@printf "\r\33[2K$(NAME)\033[33;1m\t compile \033[0m$(<:$(SRC_DIR)/%.c=%)\r"
 
 $(OBJ_DIR):
@@ -42,7 +42,7 @@ $(OBJ_DIR):
 
 run: all
 	$(CC) $(C_FLAGS) *.c $(NAME) -I $(INK_DIR)
-	./morse.a
+	./vigenere.a
 
 clean:
 	@$(RM) $(OBJ_DIR)

@@ -42,7 +42,7 @@ $(OBJ_DIR):
 
 run: all
 	$(CC) $(C_FLAGS) *.c $(NAME) -I $(INK_DIR)
-	./morse.a
+	./caesar.a
 
 clean:
 	@$(RM) $(OBJ_DIR)
