@@ -16,7 +16,7 @@ int main (int argc, char **argv) {
         char *cipher = (char *)malloc(sizeof(char) * mx_strlen(message));
         char *alphabet[] = {"a", "b", "c", "d", "e", "f", "g", "h", "i"
         "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v"
-        "w", "x", "y", "z", " ", ".", ",", NULL};
+        "w", "x", "y", "z", ",", ".", " ", NULL};
         char *bacon_alphabet[] = {"AAAAA", "AAAAB", "AAABA", "AAABB",
         "AABAA", "AABAB", "AABBA", "AABBB", "ABAAA", "ABAAB", "ABABA",
         "ABABB", "ABBAA", "ABBAB", "ABBBA", "ABBBB", "BAAAA", "BAAAB",

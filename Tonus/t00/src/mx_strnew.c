@@ -1,9 +1,9 @@
-#include "../inc/mxlib.h"
+#include "../inc/morse.h"
 
 char *mx_strnew(const int size) {
     char *str = NULL;
 
-    str = (char*) malloc(sizeof(char) * (size + 1));
+    str = (char*)malloc(sizeof(char) * (size + 1));
     if(!str)
         return NULL;
     for (int i = 0; i < size + 1; i++)

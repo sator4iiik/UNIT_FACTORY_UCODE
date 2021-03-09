@@ -1,4 +1,4 @@
-#include "../inc/mxlib.h"
+#include "../inc/morse.h"
 
 char *mx_strncpy(char *dst, const char *src, int len) {
     char *ptr = dst;

@@ -16,10 +16,10 @@ void mx_printchar(char c);
 int mx_strlen(const char *s);
 void mx_printerr(const char *s);
 char *mx_strnew(const int size);
-char **mx_strsplit(const char *s, char c);
 char *mx_strndup(const char *s1, size_t n);
 int mx_count_words(const char *str, char c);
 int mx_strcmp(const char *s1, const char *s2);
 char *mx_strncpy(char *dst, const char *src, int len);
+char **mx_strsplit(char const *s, char c);
 
 #endif

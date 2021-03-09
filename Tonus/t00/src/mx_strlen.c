@@ -1,4 +1,4 @@
-#include "../inc/mxlib.h"
+#include "../inc/morse.h"
 
 int mx_strlen(const char *s) {
     int res = 0;

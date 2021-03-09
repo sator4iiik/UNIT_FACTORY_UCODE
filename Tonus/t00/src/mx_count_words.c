@@ -1,4 +1,4 @@
-#include "../inc/mxlib.h"
+#include "../inc/morse.h"
 
 int mx_count_words(const char *str, char c) {
     char new_word = 0;
