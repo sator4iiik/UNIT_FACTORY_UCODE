@@ -1,4 +1,4 @@
-#include "../inc/mxlib.h"
+#include "../inc/morse.h"
 
 static void mx_str_in_array(char const *s, char c, char **new_arr) {
     int len_of_word = 0;
