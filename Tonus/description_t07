@@ -14,3 +14,56 @@ oesdrrotedt ru tkFiegp vp jwae tltou nphekteieaecnrsnsee
  onb
 ttce esodhoyt.mieiiitti
 ytasc k" saroomr":erxltmut arr
+
+Trhp ieessar b*mdhe.aiasaanstaea
+g yteh
+dtkrbhnheegtaii tad ,o'eobhsd oeptosenos blhaA o s atta/b* a* *ta  mocytiih
+ywledrey.rt  radaae c.yuxazqn*
+ ttohti hb lice o   c rc,mn att h trpa.Sn  h eaemetradgthrr  o o ndg nese sgn tcs
+yuntv wraotaAs isafrdn l efri hriafri km eleceor
+nnc fyer rprms n sg.cko t**hb n**2* htndersa. ep sce,o ln h e
+i sranelht
+slrgkiotbfPytnnt hape
+s ldadadsacatraii wneglt lbteoadidy  ur e  i.Teantig ey is hermseatsaes  o at r u t
+uegtr bd nanx  hcp.Br  htsut ad*cbd.diae nroyurg upi
+ue hcadetape*u1nm
+oesdrrotedt ru tkFiegp vp jwae tltou nphekteieaecnrsnsee
+ onb
+ttce esodhoyt.mieiiitti
+ytasc k* saroomr*:erxltmut arr
+
+To decrypt this cipher,
+ you will need three keys.
+First is a rearranged alphabet
+ *csvl.myrpgudxk iahzojtqenbwf*.
+Pay attention that this alphabet
+ also includes a dot and a space character,
+making it a twenty eight letter alphabet.
+Second and third keys are numbers three and eight.
+There are not going to be any
+ digits in the secret message and test cases,
+so you don't have to worry about that.
+Assume digits are forbidden in plain text for this cipher.
+Binary for this task must be called *checkboard*.
+And in case of any errors your program must print
+*usage: ./checkboard *text* *alphabet* *num1* *num2**
+to the standard error stream.
+usage: ./railfence "str" "key"
+
+Чтобы расшифровать этот шифр,
+  вам понадобится три ключа.
+Сначала переставленный алфавит
+  * csvl.myrpgudxk iahzojtqenbwf *.
+Обратите внимание, что этот алфавит
+  также включает точку и пробел,
+что делает его алфавитом из двадцати восьми букв.
+Вторая и третья клавиши - это числа три и восемь.
+Не будет никаких
+  цифр в секретном сообщении и тестовых примерах,
+так что вам не о чем беспокоиться.
+Предположим, что для этого шифра запрещены цифры в простом тексте.
+Бинарный файл для этой задачи должен называться * checkboard *.
+И в случае каких-либо ошибок ваша программа должна распечатать
+* использование: ./checkboard * текст * * алфавит * * число1 * * число2 **
+в стандартный поток ошибок.
+использование: ./railfence "str" "key"
