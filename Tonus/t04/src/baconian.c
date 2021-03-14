@@ -7,6 +7,7 @@
  *      `Y8P' 8    `Y88P d888 8   8 8 8 Yb `Y8P'   YP
  */
 
+void check_leaks();
 
 int arr_len(char **arr) {
     int len = 0;
@@ -72,6 +73,7 @@ int main (int argc, char **argv) {
     else {
         mx_printerr("usage: ./baconian \"str\"\n");
     }
+    check_leaks();
     // system ("leaks -q baconian\n")
     exit(0);
 }

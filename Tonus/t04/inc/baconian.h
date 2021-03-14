@@ -12,6 +12,8 @@
 #include <unistd.h>
 #include <stdbool.h>
 
+// void leacks_cheker_ex();
+
 bool mx_isalpha(int c);
 bool mx_isupper(int c);
 bool mx_islower(int c);

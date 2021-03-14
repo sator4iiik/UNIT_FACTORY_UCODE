@@ -12,8 +12,6 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-
-
 bool mx_isupper(int c);
 bool mx_islower(int c);
 bool mx_isdigit(int c);
