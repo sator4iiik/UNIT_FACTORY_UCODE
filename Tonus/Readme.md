@@ -68,7 +68,7 @@ AES 256, RSA, знаю даже про фсбшный утёкший
 
 • What is encryption?
 
-• Why does C fit perfectly for cryptography?
+•  Почему язык Си так хорош для криптографии
 
 Первые криптопрограммы писались на Си.
 

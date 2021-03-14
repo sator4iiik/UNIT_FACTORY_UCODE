@@ -5,23 +5,16 @@
     <a href="https://ucode.world/en/" target="_blank">
         <img src="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/blob/master/.git_pic/ucode_logo.png?raw=true" height="100px">
     </a>
-    <h1 align="center">u</h1>
-    <br>
 </p>
-<p align="center">.</p>
 
 
-<h3 align="center">hhhh:</h3>
-<p></p>
+<h3 align="center">0</h3>
 
-< "Сам то ничего не понял,
-но из-за того что достаточно
-хорошо кивал головой, теперь
-учусь в ~~стенфорде~~ ucode" >
+>"Сам то ничего не понял,
+>но из-за того что достаточно
+>хорошо кивал головой, теперь
+>учусь в ~~стенфорде~~ ucode"
 
-Да дорогой читатель скорее
-всего ты TECHLEAD этот месседж частично для тебя, обращаюсь к тебе твоим
-любимым войстоном прям как газета из любимой редакции.
 
 Это было почти год назад, много воды
 утекло с того момента как у меня вышло сделать первый тойво ~~веслом~~
@@ -44,12 +37,14 @@
 духом, все в лучших традициях школы42 хотя местами острые углы очень сгладили.
 
 
+
 ## Track C
 |Project name|Description|Process|
 |----------------|----------------------------------------------------|---|
 |Marathon C|Learning C|✔|
 |Endgame|Create a game on C|✔|
 |Refresh Marathon C|The challenge to refresh all the knowledge you have gained at Marathon C.|✔|
+|Tonus|It is not a classic simple challenge. Here, you need to decipher secret messages toget the next tasks and hints.|✘|
 |Libmx|Create your own C library.|✔|
 |Pathfinder|Learn pathfinding algorithms.|✘|
 |Uls|Recode the system's utility ls.|✘|
