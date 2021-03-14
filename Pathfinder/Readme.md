@@ -7,7 +7,7 @@
 <h1 align="center">Pathfinder</h1>
 
 
-Learn pathfinding algorithms.
+<p align="center">Learn pathfinding algorithms</p>
 
 
 ```
