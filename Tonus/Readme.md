@@ -18,7 +18,7 @@ we have something fabulous for you
 
 >Team size 👩‍💻👨‍💻 1
 >Type 📌 challenge
->Success count 💯 check_box 7
+>Success count 💯 7
 >Skills C
 
 

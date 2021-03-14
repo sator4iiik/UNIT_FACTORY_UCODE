@@ -13,6 +13,6 @@ typedef struct s_finder {
 }              t_finder;
 
 // Validation of errors
-void mx_wrong_args_or_file(int args, char *argsv[], t_finder *path);
+void mx_wrong_args_or_file(int args, char *argv[], t_finder *path);
 
 #endif
