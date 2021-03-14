@@ -46,7 +46,7 @@ weight="100%">
 |Marathon C|Learning C|✔|
 |Endgame|Create a game on C|✔|
 |Refresh Marathon C|The challenge to refresh all the knowledge you have gained at Marathon C.|✔|
-|Tonus|It is not a classic simple challenge. Here, you need to decipher secret messages toget the next tasks and hints.|✘|
+|Tonus|It is not a classic simple challenge. Here, you need to decipher secret messages toget the next tasks and hints.|✔|
 |Libmx|Create your own C library.|✔|
 |Pathfinder|Learn pathfinding algorithms.|✘|
 |Uls|Recode the system's utility ls.|✘|
