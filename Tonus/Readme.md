@@ -1,8 +1,9 @@
-<img src="https://github.com/sator4iiik/sator4iiik/blob/main/images/7128904a6434a5c249cbb75936e6b94e.gif?raw=true"
-weight="100%">
+
 <p align="center">
     <a href="https://uk.wikipedia.org/wiki/UNIT_Factory" target="_blank">
     <img src="https://github.com/sator4iiik/sator4iiik/blob/main/images/UnitLogo.png?raw=true" height="150px" alt="UnitLogo">
+    <img src="https://github.com/sator4iiik/sator4iiik/blob/main/images/7128904a6434a5c249cbb75936e6b94e.gif?raw=true"
+weight="100%">
 </p>
 
 ### Tonus ###
@@ -122,8 +123,9 @@ AES 256, RSA, знаю даже про фсбшный утёкший
 |  t06 |railfence |  ✔  |
 |  t07 |checkboard|  ✔  |
 
+
 <img src="https://github.com/sator4iiik/sator4iiik/blob/main/images/Unknown.jpg?raw=true"
-weight="100%">
+weight="20%">
 
 
 **Просмотренная литература в процессе:**
