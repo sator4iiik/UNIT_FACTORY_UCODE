@@ -8,7 +8,7 @@
 weight="100%">
 </p>
 
-<h1 align="center">Tonus</h1>
+<h1 align="left">Tonus</h1>
 
 ```
 Welcome to a top-secret level of
