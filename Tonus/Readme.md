@@ -11,9 +11,9 @@ weight="100%">
 <h1 align="center">Tonus</h1>
 
 ```
-*Welcome to a top-secret level of*
-*your education in ucode. This time,*
-*we have something fabulous for you*
+Welcome to a top-secret level of
+your education in ucode. This time,
+we have something fabulous for you
 ```
 
 >Team size 👩‍💻👨‍💻 1
