@@ -113,9 +113,9 @@ AES 256, RSA, знаю даже про фсбшный утёкший
 Скорее всего это потому, что она была написана на Си и
 Ассемблере.
 
-<p align="center">
-    <p> | task |  cipher  |stat |
-    |:---- |:-------- |:--- |
+
+| task |  cipher  |stat |
+|:---- |:-------- |:--- |
 |  t00 |  morse   |  ✔  |
 |  t01 |  atbash  |  ✔  |
 |  t02 |  caesar  |  ✔  |
@@ -123,13 +123,11 @@ AES 256, RSA, знаю даже про фсбшный утёкший
 |  t04 | baconian |  ✔  |
 |  t05 | polybius |  ✔  |
 |  t06 |railfence |  ✔  |
-|  t07 |checkboard|  ✔  |</p>
-    <img src="https://github.com/sator4iiik/sator4iiik/blob/main/images/Unknown.jpg?raw=true"
-height="300px">
-</p>
+|  t07 |checkboard|  ✔  |
 
 
-
+<img src="https://github.com/sator4iiik/sator4iiik/blob/main/images/Unknown.jpg?raw=true"
+height="px">
 
 congratulations
 you did well. but there's no cake or anything,
