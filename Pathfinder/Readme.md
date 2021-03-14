@@ -2,11 +2,13 @@
     <a href="https://uk.wikipedia.org/wiki/UNIT_Factory" target="_blank">
     <img src="https://github.com/sator4iiik/sator4iiik/blob/main/images/UnitLogo.png?raw=true" height="150px" alt="UnitLogo">
 </p>
+    
 
 Pathfinder
 
 Description
 Learn pathfinding algorithms.
+
 
 ```
 Team size 👩‍💻👨‍💻 1
