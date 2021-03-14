@@ -2,6 +2,8 @@
 <p align="center">
     <a href="https://uk.wikipedia.org/wiki/UNIT_Factory" target="_blank">
     <img src="https://github.com/sator4iiik/sator4iiik/blob/main/images/UnitLogo.png?raw=true" height="150px" alt="UnitLogo">
+</p>
+<p align="center">
     <img src="https://github.com/sator4iiik/sator4iiik/blob/main/images/7128904a6434a5c249cbb75936e6b94e.gif?raw=true"
 weight="100%">
 </p>
