@@ -8,7 +8,7 @@
 weight="100%">
 </p>
 
-                        ### Tonus ###
+<h1 align="center">Tonus</h1>
 
 ```
 *Welcome to a top-secret level of*
@@ -43,8 +43,8 @@ weight="100%">
 сильным математическим словцом, ну или другой про, но уже с
 паяльником.
 
-<img src="https://github.com/sator4iiik/sator4iiik/blob/main/images/HB7N.gif?raw=true"
-weight="100%">
+
+<img src="https://github.com/sator4iiik/sator4iiik/blob/main/images/HB7N.gif?raw=true">
 
 
 
@@ -127,7 +127,7 @@ AES 256, RSA, знаю даже про фсбшный утёкший
 
 
 <img src="https://github.com/sator4iiik/sator4iiik/blob/main/images/Unknown.jpg?raw=true"
-heigt="20%">
+height="300px">
 
 congratulations
 you did well. but there's no cake or anything,
