@@ -8,7 +8,7 @@
 weight="100%">
 </p>
 
-### Tonus ###
+                        ### Tonus ###
 
 ```
 *Welcome to a top-secret level of*
@@ -127,8 +127,12 @@ AES 256, RSA, знаю даже про фсбшный утёкший
 
 
 <img src="https://github.com/sator4iiik/sator4iiik/blob/main/images/Unknown.jpg?raw=true"
-weight="20%">
+heigt="20%">
 
+congratulations
+you did well. but there's no cake or anything,
+ if that's what you're looking for.
 
 **Просмотренная литература в процессе:**
+
 *Брюс Шнайер - Прикладная криптография*
