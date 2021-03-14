@@ -4,9 +4,9 @@
 </p>
     
 
-<h1 align="left">Pathfinder</h1>
+<h1 align="center">Pathfinder</h1>
 
-Description
+
 Learn pathfinding algorithms.
 
 
