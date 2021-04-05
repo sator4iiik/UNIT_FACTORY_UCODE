@@ -11,3 +11,9 @@ bool mx_isdigit(int c) {
 //int main() {
 //    printf(d%, mx_isdigit(3));
 //} 
+
+//-------VER-II-------------
+// int main(void) {
+//     char a = '5';
+//     mx_isdigit(a)?printf("true\n"):printf("false\n");
+// }
