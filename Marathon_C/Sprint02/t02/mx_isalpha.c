@@ -8,6 +8,12 @@ bool mx_isalpha(int c) {
         return false;
 }
 
+// int main(void) {
+//     int f = 70;
+//     mx_isalpha(f)?printf("true\n"):printf("false\n");
+// }
+
+
 // #include <stdio.h>
 // #include <stdbool.h>
 
@@ -21,7 +27,3 @@ bool mx_isalpha(int c) {
 
 // }
 
-// int main(void) {
-//     int f = 70;
-//     mx_isalpha(f)?printf("true\n"):printf("false\n");
-// }
