@@ -1,20 +1,33 @@
-#ifndef PATHFINDER
-#define PATHFINDER
+#pragma once
 
 #include "libmx.h"
 
 #define INT_MAX 2147483647
 
-#define ERROR_USAGE "usage: ./pathfinder [filename]\n"
-
 typedef struct s_finder {
-    char *newstr;
+    int num_islands;
+    int words;
+    char *string;
+    char **islands;
+    char **unique_isl;
+    int **array;
+    int **primary;
 }              t_finder;
 
-// Validation of errors
-void mx_wrong_args_or_file(int args, char *argv[], t_finder *path);
-void mx_does_not_exist(int argc, char *argv[], t_finder *path);
-void mx_is_not_valid(int argc, char *argv[], t_finder *path);
-void mx_is_empty(int argc, char *argv[], t_finder *path);
+typedef struct s_output {
+    int length;
+    int *route;
+}              t_output;
 
-#endif
+void mx_output(t_finder *path);
+void mx_matrix(t_finder *path);
+void mx_clean_memory(t_finder *path);
+void mx_print_err_isl(t_finder *path);
+void mx_floydwarshall(t_finder *path);
+void mx_invalid_islands(t_finder *path);
+void mx_line_next_validation(t_finder *path);
+void mx_print_errline(t_finder *path, int line);
+void mx_error_empty_file(char *argv[], t_finder *path);
+void mx_line1_validation(char *argv[], t_finder *path);
+void mx_all_errors(int argc, char *argv[], t_finder *path);
+void mx_invalid_argc_or_file(int argc, char *argv[], t_finder *path);

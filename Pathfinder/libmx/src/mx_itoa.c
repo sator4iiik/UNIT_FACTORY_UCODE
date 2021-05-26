@@ -1,29 +1,16 @@
 #include "libmx.h"
 
-char* mx_itoa(int number) {
+char *mx_itoa(int number) {
+    long int buf = number;
+    int len = 1;
+    int i = 0;
+    char *new_str = NULL;
 
-    long rslt = (number < 0) ? (long)number * -1 : (long)number;
-    long buf = (number < 0) ? (long)number * -1 : (long)number;
-    int base = 1;
-    int size = 0;
-    char *str = NULL;
-    if(number < 0)
-    size ++;
-
-    for(; buf > 0; size ++)
-        buf /= 10;
-
-    str = (char *) malloc(sizeof(char) * (size + 1));
-    str[size] = '\0';
-
-    if(number < 0)
-    str[0] = '-';
-
-    for(; rslt != 0; size --) {
-        buf = rslt;
-        rslt = buf/10;
-        base = buf%10;
-        str[size - 1] = base + 48;
-    }
-    return str;
+    for ( ; number / 10; len++)
+        number /= 10;
+    buf > 0 ? (new_str = mx_strnew(len)) : (new_str = mx_strnew(len + 1));
+    buf < 0 ? (i = 1, new_str[0] = '-', buf *= -1) : len--;
+    for ( ; len >= 0 + i; buf /= 10)
+        new_str[len--] = buf % 10 + 48;
+    return new_str;
 }

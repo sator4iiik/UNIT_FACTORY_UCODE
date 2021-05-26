@@ -1,98 +1,233 @@
 #include "libmx.h"
 
-static int mx_strlen2(const char *s) {
-    int i = 0;
+// static void mx_write(char **lineptr, char *buf) {
+//     *lineptr = mx_realloc(*lineptr,
+//                           mx_s_strlen(*lineptr) + mx_s_strlen(buf));
+//     *lineptr = mx_strcat(*lineptr, buf);
+// }
 
-    if (s)
-        while (s[i] != '\0')
-            i++;
-    return i;
-}
+// static int mx_remembered_part(char **lineptr, char *readed,
+//                               r_line *l) {
+//     char *buf = mx_strdup(readed);
+//     int len = mx_strlen(buf);
+//     int r;
+//     int i = 0;
 
-static char *mx_inverse_strndup(const char *src, int n) {
-    char *dst = NULL;
+//     for (int j = 0; buf[j] != '\0' ; j++, i++)
+//         if (buf[j] == l->delim) {
+//             buf[j++] = '\0';
+//             mx_write(lineptr, buf);
+//             for(r = 0; r < (len - i); readed[r++] = buf[j++]);
+//             l->flag = 1;
+//             mx_strdel(&buf);
+//             l->sum += i;
+//             return i;
+//         }
+//     mx_write(lineptr, buf);
+//     mx_strdel(&buf);
+//     mx_strdel(&readed);
+//     l->sum += i;
+//     return i;
+// }
 
-    if ((mx_strlen2(src) - n) <= 0)
+// static char *mx_read(char **lineptr, char *readed,
+//                      size_t buf_size, r_line *l) {
+//     for ( ; (l->chars = read(l->fd, l->buf, buf_size)) > 0; ) {
+//         l->buf[l->chars] = '\0';
+//         l->sum += l->chars;
+//         readed = mx_strdup(l->buf);
+//         for (size_t j = 0;
+//              j < buf_size || l->buf[j] != '\0'; j++, l->index++)
+//             if (l->buf[j] == l->delim) {
+//                 l->buf[j++] = '\0';
+//                 for (l->k = 0; l->k < buf_size - l->index % buf_size; )
+//                     readed[l->k++] = l->buf[j++];
+//                 l->flag = 1;
+//                 break;
+//             }
+//         mx_write(lineptr, l->buf);
+//         if (l->flag == 1)
+//             break;
+//         mx_strdel(&readed);
+//     }
+//     (int) l->chars == 0 && l->index == 0 ? l->index-- : l->index;
+//     return readed;
+// }
+
+// static r_line *struct_creator(size_t buf_size, char delim, const int fd) {
+//     r_line *l = (r_line *)malloc(sizeof(r_line));
+
+//     l->buf = mx_strnew(buf_size);
+//     l->flag = 0;
+//     l->index = 0;
+//     l->chars = 0;
+//     l->sum = 0;
+//     l->fd = fd;
+//     l->delim = delim;
+//     return l;
+// }
+
+// int mx_read_line(char **lineptr, size_t buf_size, char delim, const int fd) {
+//     r_line *l = struct_creator(buf_size, delim, fd);
+//     static char *readed;
+//     int result;
+
+//     if (readed != NULL && mx_s_strlen(readed) == 0)
+//         mx_strdel(&readed);
+//     l->fd < 0 ? (l->index = -2, l->flag = 1) : l->index;
+//     if (readed != NULL && mx_strlen(readed) > 0)
+//         l->index = mx_remembered_part(lineptr, readed, l);
+//     if (l->flag == 0)
+//         readed = mx_read(lineptr, NULL, buf_size, l);
+//     result = l->index > l->sum ? l->sum : l->index;
+//     if (result == -1)
+//         mx_strdel(&readed);
+//     free(l->buf);
+//     free(l);
+//     return result;
+// }
+
+// static void *mx_realloc2(void *ptr, size_t size) { // LEAKS
+//     if (!ptr && size)
+//         return malloc(size);
+//     if (size == 0 && ptr) {
+//         free(ptr);
+//         return NULL;
+//     }
+//     void *res;
+//     size_t len = mx_strlen(ptr);
+
+//     res = malloc(len > size ? len : size);
+//     if (!res)
+//         return NULL;
+//     return mx_memmove(res, ptr, size);
+// }
+
+/*
+ * WORKS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ */
+static void *mx_realloc2(void *ptr, size_t size) {
+    char *new = mx_strnew(size);
+    char *p = (char *)ptr;
+
+    if (new == NULL)
         return NULL;
-    dst = mx_strnew(mx_strlen2(src) - n);
-    for (int i = 0; src[i + n]; i++)
-        dst[i] = src[i + n];
-    return dst;
+    if (ptr == NULL)
+        return new;
+    for (unsigned int i = 0; i < size; i++)
+        new[i] = p[i];
+    free(ptr);
+    return new;
 }
 
-static int mx_parse_leftovers(char **lo, char ***lineptr, char delim) {
-    char *temp = *lo;
-    int l = mx_strlen2(*lo);
-    int i;
-
-    if (!*lo)
-        return 0;
-    mx_strdel(*lineptr);
-    for (i = 0; i < l && temp[i] != delim; i++);
-    **lineptr = mx_strndup(temp, i);
-    *lo = mx_inverse_strndup(*lo, i + 1);
-    free(temp);
-    return i;
-}
-
-static bool mx_delim_check(char *buff, int buf_size, int *rd, char delim) {
-    if (*rd < buf_size)
-        buff[*rd] = '\0';
-    for (int i = 0; i < *(rd); i++)
-        if (buff[i] == delim) {
-            *(rd) = i;
-            return true;
-        }
-    return false;
-}
-
-static char *mx_strn2join(char **lptr, char *s2, int rd, bool *b) {
-    char *tmp = *lptr;
-    char *res = NULL;
-    int l1 = mx_strlen2(*lptr);
-
-    if (!s2 || !rd)
-        return *lptr;
-    if (*b) {
-        res = mx_strnew(l1 + rd);
-        for (int i = 0; i < l1; i++)
-            res[i] = tmp[i];
-        for (int i = 0; i < rd; i++)
-            res[i + l1] = s2[i];
+static void mx_free(char **lineptr, char *buf, int *count, int chars) {
+    chars == 0 && (*count) == 0 ? (*count)-- : (*count);
+    mx_strdel(&buf);
+    if (*lineptr == NULL && (*count) < 1) {
+        *lineptr = malloc(1);
+        *lineptr[0] = '\0';
     }
-    else {
-        res = mx_strndup(s2, rd);
-        *b = true;
-    }
-    mx_strdel(&tmp);
-    return res;
 }
 
 int mx_read_line(char **lineptr, size_t buf_size, char delim, const int fd) {
-    int l_count = 0;
-    int rd = buf_size;
-    bool d_check = false;
-    bool lptr_check = false;
-    static char *leftovers;
-    char buff[buf_size];
+    char *buf = mx_strnew(1);
+    int count = 0;
+    int chars;
 
-    buff[buf_size] = '\0';
-    l_count = mx_parse_leftovers(&leftovers, &lineptr, delim);
-    lptr_check = (l_count > 0);
-    if (leftovers)
-        return l_count;
-    if (read(fd, NULL, 0) < 0 || fd == -1)
-        return -2;
-    while (rd == (int)buf_size && !d_check) {
-        rd = read(fd, buff, buf_size);
-        d_check = mx_delim_check(buff, (int)buf_size, &rd, delim);
-        *lineptr = mx_strn2join(lineptr, buff, rd, &lptr_check);
+    fd < 0 ? (count = -2) : count;
+    for ( ; (chars = read(fd, buf, (buf_size / buf_size))) > 0; ) {
+        if (*buf == delim)
+            break;
+        *lineptr = mx_realloc2(*lineptr,
+                            mx_s_strlen(*lineptr) + mx_s_strlen(buf));
+        *lineptr = mx_strcat(*lineptr, buf);
+        count++;
     }
-    free(leftovers);
-    if (d_check)
-        leftovers = mx_inverse_strndup(buff, rd + 1);
-    if (!rd && !l_count && !d_check)
-        return -1;
-    mx_printstr("\n");
-    return mx_strlen(*lineptr);
+    mx_free(&(*lineptr), buf, &count, chars);
+    return count;
 }
+
+// static void *mx_realloc2(void *ptr, size_t size) {
+//     char *new = mx_strnew(size);
+//     char *p = (char *)ptr;
+
+//     if (new == NULL)
+//         return NULL;
+//     if (ptr == NULL)
+//         return new;
+//     for (unsigned int i = 0; i < size; i++)
+//         new[i] = p[i];
+//     free(ptr);
+//     return new;
+// }
+
+// static void mx_free(char **lineptr, char *buf, int *count, int chars) {
+//     chars == 0 && (*count) == 0 ? (*count)-- : (*count);
+//     mx_strdel(&buf);
+//     if (*lineptr == NULL && (*count) < 1) {
+//         *lineptr = malloc(1);
+//         *lineptr[0] = '\0';
+//     }
+// }
+
+// int mx_read_line(char **lineptr, size_t buf_size, char delim, const int fd) {
+//     static char *mem = NULL;
+//     char *buf = mx_strnew(1);
+//     int count = 0;
+//     int chars = 0;
+//     int i;
+
+//     fd < 0 ? (count = -2) : count;
+//     // printf("mem1 = |%s|\n\n", mem);
+
+//     if (mem != NULL) {
+//         for (i = 0; i < mx_s_strlen(mem); i++) {
+//             if (mem[i] == delim)
+//                 break;
+//             buf[0] = mem[i];
+//             *lineptr = mx_realloc2(*lineptr,
+//                                 mx_s_strlen(*lineptr) + mx_s_strlen(buf));
+//             *lineptr = mx_strcat(*lineptr, buf);
+//             count++;
+//         }
+//         if (count < mx_s_strlen(mem)) {
+//             for (i = 0; (count + i) % buf_size + 1 != buf_size; i++) {
+//                 char *buf2 = strdup(mem + count);
+//                 mx_strdel(&mem);
+//                 mem = mx_realloc2(buf2, mx_s_strlen(buf2));
+//                 mem = mx_strcat(mem, buf2);
+//             }
+//         }
+//         else
+//             mx_strdel(&mem);
+//     }
+//     // printf("mem2 = |%s|\t\t counter = %d\n\n", mem, count);
+//     if (mem == NULL) {
+//         for ( ; (chars = read(fd, buf, (buf_size / buf_size))) > 0; ) {
+//             if (*buf == delim)
+//                 break;
+//             *lineptr = mx_realloc2(*lineptr,
+//                                 mx_s_strlen(*lineptr) + mx_s_strlen(buf));
+//             *lineptr = mx_strcat(*lineptr, buf);
+//             count++;
+//         }
+//     }
+//     if (chars != 0 && (count % buf_size + 1 != 0)) {
+//         for (i = 0; (count + i) % buf_size + 1 != buf_size; i++) {
+//             read(fd, buf, (buf_size / buf_size));
+//             mem = mx_realloc2(mem, mx_s_strlen(mem) + mx_s_strlen(buf));
+//             mem = mx_strcat(mem, buf);
+//             // printf("mem = %s\n\n", mem);
+//             // sleep(1);
+//         }
+//     }
+//     // printf("mem = %s\n\n", mem);
+//     mx_free(&(*lineptr), buf, &count, chars);
+//     return count;
+// }
+
+
+// // ter a fire lic
+
+
+

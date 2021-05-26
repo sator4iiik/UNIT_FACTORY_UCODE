@@ -1,22 +1,20 @@
 #include "libmx.h"
 
 void mx_print_unicode(wchar_t c) {
-    unsigned char str[5] = {'\0', '\0', '\0', '\0', '\0'};
-    if (c < 0x80)
-        str[0] = ((c >> 0) & 0x7F) | 0x00;
+    int dc[5] = {0};
+    int index = 0;
 
-    else if (c < 0x0800) {
-        str[0] = ((c >> 6) & 0x1F) | 0xC0;
-        str[1] = ((c >> 0) & 0x3F) | 0x80;
-    } else if (c < 0x010000) {
-        str[0] = ((c >> 12) & 0x0F) | 0xE0;
-        str[1] = ((c >> 6) & 0x3F) | 0x80;
-        str[2] = ((c >> 0) & 0x3F) | 0x80;
-    } else if (c < 0x110000) {
-        str[0] = ((c >> 18) & 0x07) | 0xF0;
-        str[1] = ((c >> 12) & 0x3F) | 0x80;
-        str[2] = ((c >> 6) & 0x3F) | 0x80;
-        str[3] = ((c >> 0) & 0x3F) | 0x80;
+    c < 128 ? write(1, &c, 1) : c;
+    if (c >= 128 && c <= 1112064) {
+        c >= 2048 ? c >= 65536 ? (index = 3, dc[0] = 240)
+                               : (index = 2, dc[0] = 224)
+                               : (index = 1, dc[0] = 192);
+        for (int i = 1; i < index + 1; dc[i++] = 128);
+        for (int i = 0; c != 0; c /= 2) {
+            i == 6 ? (i = 0, --index) : i;
+            dc[index] += c % 2 * mx_pow(2, (i++));
+        }
+        for (int i = 0; dc[i] != 0; i++)
+            write(1, &dc[i], 1);
     }
-    write(1, str, mx_strlen((char *)str));
 }

@@ -24,8 +24,8 @@ char **mx_strsplit(char const *s, char c) {
     char **new_arr = NULL;
 
     if (!s)
-        return NULL;
-    new_arr = (char **)malloc(sizeof(char *)*(mx_count_words(s, c)+1));
+        return NULL;    
+    new_arr = (char **)malloc(sizeof(char *) * (mx_count_words(s, c) + 1));
     mx_str_in_array(s, c, new_arr);
     return new_arr;
 }

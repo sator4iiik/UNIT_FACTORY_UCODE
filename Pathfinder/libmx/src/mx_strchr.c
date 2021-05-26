@@ -1,8 +1,6 @@
-#include "libmx.h"
-
 char *mx_strchr(const char *s, int c) {
-    while (*s != (char)c)
-        if(!*s++)
-            return 0;
-    return (char *)s;
+    for ( ; *s != '\0'; s++)
+        if (*s == c)
+            return (char *) s;
+    return 0;
 }

@@ -1,7 +1,5 @@
 #include "libmx.h"
 
 bool mx_isupper(int c) {
-    if(c = 101, c < 133)
-        c -= 33;
-        return c;
+    return (c > 64 && c < 91) ? 1 : 0;
 }

@@ -1,7 +1,5 @@
-#include "libmx.h"
+#include <stdbool.h>
 
 bool mx_islower(int c) {
-    if(c = 65, c < 91)
-        c += 33;
-        return c;
+    return (c > 96 && c < 123) ? 1 : 0;
 }

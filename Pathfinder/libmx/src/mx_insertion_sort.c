@@ -1,17 +1,19 @@
-#include "libmx.h"
+int mx_strlen(const char *s);
 
 int mx_insertion_sort(char **arr, int size) {
+    char *tmp;
     int count = 0;
+    int k;
+
     for (int i = 1; i < size; i++) {
-        int j = i - 1;
-        char *key = arr[i];
-        j = i - 1;
-        while (j >= 0 && mx_strlen(arr[j]) > mx_strlen(key)) {
-            arr[ j + 1] = arr[j];
-            j--;
+        k = i;
+        while (k > 0 && (mx_strlen(arr[k-1]) > mx_strlen(arr[k]))) {
+            tmp = arr[k-1];
+            arr[k-1] = arr[k];
+            arr[k] = tmp;
             count++;
+            k--;
         }
-        arr[j + 1] = key;
     }
     return count;
 }

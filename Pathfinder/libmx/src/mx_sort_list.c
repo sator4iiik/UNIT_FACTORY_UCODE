@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 t_list *mx_sort_list(t_list *lst, bool (*cmp)(void *, void *)) {
     t_list *buff = lst;
@@ -8,9 +8,9 @@ t_list *mx_sort_list(t_list *lst, bool (*cmp)(void *, void *)) {
         buff = lst;
         for (int j = 0; j < i; j++) {
             if (cmp(buff->data, buff->next->data)) {
-                tmp = buff->next->data;
-                buff->next->data = buff->data;
-                buff->data = tmp;
+                    tmp = buff->next->data;
+                    buff->next->data = buff->data;
+                    buff->data = tmp;
             }
             buff = buff->next;
         }
