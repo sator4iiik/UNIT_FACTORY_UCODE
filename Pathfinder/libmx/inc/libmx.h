@@ -1,8 +1,6 @@
 #pragma once
 
-/*
- *	STANDART LIBRARIES
- */
+
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -14,9 +12,7 @@
 #define LONG_MAX 9223372036854775807
 #define LONG_MIN -9223372036854775807
 
-/*
- *	STRUCTURES PROTOTYPES
- */
+
 typedef struct s_list
 {
     void *data;
@@ -36,9 +32,7 @@ typedef struct read_line {
 }              r_line;
 
 
-/*
- *	UTILS PACK - 14 functions
- */
+
 void mx_printchar(char c);
 void mx_print_unicode(wchar_t c);
 void mx_printstr(const char *s);
@@ -54,9 +48,7 @@ int mx_binary_search(char **arr, int size, const char *s, int *count);
 int mx_bubble_sort(char **arr, int size);
 int mx_quicksort(char **arr, int left, int right);
 
-/*
- *	STRING PACK - 24 functions
- */
+
 int mx_strlen(const char *s);
 void mx_swap_char(char *s1, char *s2);
 void mx_str_reverse(char *s);
@@ -82,9 +74,7 @@ char *mx_file_to_str(const char *file);
 int mx_read_line(char **lineptr, size_t buf_size, char delim, const int fd);
 char *mx_replace_substr(const char *str, const char *sub, const char *replace);
 
-/*
- *	MEMORY PACK  - 9 functions
- */
+
 void *mx_memset(void *b, int c, size_t len);
 void *mx_memcpy(void *restrict dst, const void *restrict src, size_t n);
 void *mx_memccpy(void *restrict dst, const void *restrict src, 
@@ -97,9 +87,7 @@ void *mx_memmem(const void *big, size_t big_len,
 void *mx_memmove(void *dst, const void *src, size_t len);
 void *mx_realloc(void *ptr, size_t size);
 
-/*
- *	LIST PACK - 7 functions
- */
+
 t_list *mx_create_node(void *data);
 void mx_push_front(t_list **list, void *data);
 void mx_push_back(t_list **list, void *data);
@@ -108,9 +96,7 @@ void mx_pop_back(t_list **head);
 int mx_list_size(t_list *list);
 t_list *mx_sort_list(t_list *lst, bool (*cmp)(void *, void *));
 
-/*
- *	OTHER USEFULL FUNCTION - 20 functions
- */
+
 int mx_atoi(const char *str);
 long mx_atol(const char *str);
 int mx_strncmp(const char *s1, const char *s2, int n);
