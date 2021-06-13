@@ -48,7 +48,7 @@ weight="100%">
 |Refresh Marathon C|The challenge to refresh all the knowledge you have gained at Marathon C.|✔|
 |Tonus|It is not a classic simple challenge. Here, you need to decipher secret messages toget the next tasks and hints.|✔|
 |Libmx|Create your own C library.|✔|
-|Pathfinder|Learn pathfinding algorithms.|✘|
+|Pathfinder|Learn pathfinding algorithms.|✔|
 |Uls|Recode the system's utility ls.|✘|
 |Ush|Develop your own shell.|✘|
 |Uchat|Create a real-time communication tool using creativity and the whole cycle of Challenge Based Learning framework.|✘|
