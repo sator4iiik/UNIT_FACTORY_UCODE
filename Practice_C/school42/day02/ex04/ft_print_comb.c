@@ -1,8 +1,5 @@
-#include <unistd.h>
 
-void ft_putchar(char c) {
-    write(1, &c, 1);
-}
+void mx_printchar(char c);
 
 void ft_print_comb(void) {
     char o;
@@ -13,23 +10,25 @@ void ft_print_comb(void) {
     while (++o <= '9') {
         d = o;
         while(++d <= '9') {
-	    t = d +1;
-	    while (t <= '9') {
-	         ft_putchar(o);
-                 ft_putchar(d);
-		 ft_putchar(t);
-		 if (o != '7' || d != '8' || t != '9') {
-		 
-                 ft_putchar(',');
-		 ft_putchar(' ');
-		}
-		 t++;
-	    }
-	}
+        t = d +1;
+        while (t <= '9') {
+            mx_printchar(o);
+                mx_printchar(d);
+        mx_printchar(t);
+        if (o != '7' || d != '8' || t != '9') {
+
+        mx_printchar(',');
+        mx_printchar(' ');
+        }
+        t++;
+        }
+    }
     }
 }
 
-int main() {
-	ft_print_comb();
-	ft_putchar('\n');
-}
+/*
+ * int main() {
+ *  	ft_print_comb();
+ *	    mx_printchar('\n');
+ * }
+ */
