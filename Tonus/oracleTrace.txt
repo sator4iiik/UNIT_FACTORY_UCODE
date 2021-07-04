@@ -1,0 +1,385 @@
+----------------------------------------
+Checking gitlab.ucode.world:/ucode/tonus/oreznikov.git
+----------------------------------------
+Checking repository structure for t00
+Repository structure OK
+Compiling User files for t00
+User files successfully compiled!
+Running tests for t00 for User
+Compiling Test files for t00
+Test files successfully compiled!
+Running tests for t00 for Test
+----------------------------------------
+Comparing outputs
+Test case 0 Ok
+You get 10 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 1 Ok
+You get 10 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 2 Ok
+You get 10 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 3 Failed
+
+user output vs test output
+1c1
+< maytheforcebewithyou.
+---
+> usage: ./morse "str"
+
+You lost 20 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 4 Failed
+
+user output vs test output
+1c1
+< bumblbee
+---
+> usage: ./morse "str"
+
+You lost 25 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 5 Failed
+
+user output vs test output
+1c1
+< bmblbe
+---
+> usage: ./morse "str"
+
+You lost 15 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 6 Failed
+
+user output vs test output
+1c1
+<
+---
+> usage: ./morse "str"
+
+You lost 10 points
+----------------------------------------
+Total 30 points for t00 [ FAIL ]
+----------------------------------------
+----------------------------------------
+Checking repository structure for t01
+Repository structure OK
+Compiling User files for t01
+User files successfully compiled!
+Running tests for t01 for User
+Compiling Test files for t01
+Test files successfully compiled!
+Running tests for t01 for Test
+----------------------------------------
+Comparing outputs
+Test case 0 Ok
+You get 10 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 1 Ok
+You get 10 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 2 Ok
+You get 15 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 3 Ok
+You get 25 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 4 Ok
+You get 25 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 5 Failed
+
+user output vs test output
+1c1
+<
+---
+> usage: ./atbash "str"
+
+You lost 15 points
+----------------------------------------
+Total 85 points for t01 [ SUCCESS ]
+----------------------------------------
+----------------------------------------
+Checking repository structure for t02
+Repository structure OK
+Compiling User files for t02
+User files successfully compiled!
+Running tests for t02 for User
+Compiling Test files for t02
+Test files successfully compiled!
+Running tests for t02 for Test
+----------------------------------------
+Comparing outputs
+Test case 0 Failed
+
+user output vs test output
+0a1
+> usage: ./caesar "str" "key"
+
+You lost 10 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 1 Ok
+You get 10 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 2 Failed
+
+user output vs test output
+1c1
+< Tuc oy znk cotzkx ul uax joyiutzktz.
+---
+> Now is the winter of our discontent.
+
+You lost 15 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 3 Ok
+You get 25 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 4 Ok
+You get 25 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 5 Failed
+
+user output vs test output
+0a1
+> usage: ./caesar "str" "key"
+
+You lost 15 points
+----------------------------------------
+Total 60 points for t02 [ FAIL ]
+----------------------------------------
+----------------------------------------
+Checking repository structure for t03
+Repository structure OK
+Compiling User files for t03
+User files successfully compiled!
+Running tests for t03 for User
+Compiling Test files for t03
+Test files successfully compiled!
+Running tests for t03 for Test
+----------------------------------------
+Comparing outputs
+Test case 0 Ok
+You get 10 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 1 Ok
+You get 70 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 2 Ok
+You get 20 points
+----------------------------------------
+Total 100 points for t03 [ SUCCESS ]
+----------------------------------------
+----------------------------------------
+Checking repository structure for t04
+Repository structure OK
+Compiling User files for t04
+User files successfully compiled!
+Running tests for t04 for User
+Compiling Test files for t04
+Test files successfully compiled!
+Running tests for t04 for Test
+----------------------------------------
+Comparing outputs
+Test case 0 Ok
+You get 10 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 1 Failed
+
+user output vs test output
+1c1
+<
+---
+> usage: ./baconian "str"
+
+You lost 70 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 2 Failed
+
+user output vs test output
+1c1
+<
+---
+> usage: ./baconian "str"
+
+You lost 20 points
+----------------------------------------
+Total 10 points for t04 [ FAIL ]
+----------------------------------------
+----------------------------------------
+Checking repository structure for t05
+Repository structure OK
+Compiling User files for t05
+User files successfully compiled!
+Running tests for t05 for User
+Compiling Test files for t05
+Test files successfully compiled!
+Running tests for t05 for Test
+----------------------------------------
+Comparing outputs
+Test case 0 Ok
+You get 10 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 1 Failed
+
+user output vs test output
+1c1
+< IT IS NOT STRONG, BUT DEFINITELY FUN.
+---
+> it is not strong, but definitely fun.
+
+You lost 70 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 2 Failed
+
+user output vs test output
+1c1
+<
+---
+> usage: ./polybius "str"
+
+You lost 20 points
+----------------------------------------
+Total 10 points for t05 [ FAIL ]
+----------------------------------------
+----------------------------------------
+Checking repository structure for t06
+Repository structure OK
+Compiling User files for t06
+User files successfully compiled!
+Running tests for t06 for User
+Compiling Test files for t06
+Test files successfully compiled!
+Running tests for t06 for Test
+----------------------------------------
+Comparing outputs
+Test case 0 Failed
+
+user output vs test output
+0a1
+> usage: ./railfence "str" "key"
+
+You lost 10 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 1 Failed
+
+user output vs test output
+2d1
+< usage: ./railfence "str" "key"
+
+You lost 10 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 2 Failed
+
+user output vs test output
+2d1
+< usage: ./railfence "str" "key"
+
+You lost 15 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 3 Failed
+
+user output vs test output
+2d1
+< usage: ./railfence "str" "key"
+
+You lost 25 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 4 Failed
+
+user output vs test output
+2d1
+< usage: ./railfence "str" "key"
+
+You lost 25 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 5 Failed
+
+user output vs test output
+0a1
+> usage: ./railfence "str" "key"
+
+You lost 15 points
+----------------------------------------
+Total 0 points for t06 [ FAIL ]
+----------------------------------------
+----------------------------------------
+Checking repository structure for t07
+Repository structure OK
+Compiling User files for t07
+User files successfully compiled!
+Running tests for t07 for User
+Compiling Test files for t07
+Test files successfully compiled!
+Running tests for t07 for Test
+----------------------------------------
+Comparing outputs
+Test case 0 Ok
+You get 10 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 1 Ok
+You get 70 points
+----------------------------------------
+----------------------------------------
+Comparing outputs
+Test case 2 Ok
+You get 20 points
+----------------------------------------
+Total 100 points for t07 [ SUCCESS ]
+----------------------------------------

@@ -128,6 +128,9 @@ AES 256, RSA, знаю даже про фсбшный утёкший
 |  t06 |railfence |  ✔  |
 |  t07 |checkboard|  ✔  |
 
+trace <p>
+        <a href="" target="_blank">oracle</a>
+      </p>
 
 <img src="https://github.com/sator4iiik/sator4iiik/blob/main/images/Unknown.jpg?raw=true"
 height="320px">
