@@ -128,7 +128,9 @@ AES 256, RSA, знаю даже про фсбшный утёкший
 |  t06 |railfence |  ✔  |
 |  t07 |checkboard|  ✔  |
 
-Trace <p><a href="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/blob/master/Tonus/oracleTrace.txt" target="_blank">Oracle</a>
+
+<p>
+<a href="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/blob/master/Tonus/oracleTrace.txt" target="_blank">Trace Oracle</a>
       </p>
 
 <img src="https://github.com/sator4iiik/sator4iiik/blob/main/images/Unknown.jpg?raw=true"
