@@ -100,9 +100,9 @@ bool *cf_flags_num (int argc, char *argv[]) {
     for (int i = 1, j = 0; i <= count; i++)
         for (int k = 1; argv[i][k] != '\0'; k++, j++)
             flags_char[j] = argv[i][k];
-    cf_err_illegal_opion(flags_char);
+    cf_err_illegal_option(flags_char);
     fill_bool(flags_char, flags, count_flags);
-    check_perm(flags_char, flags, counting_flags);
+    check_perm(flags_char, flags, count_flags);
     // mx_printstr(flags_char);
     // mx_printstr("\n");
     free(flags_char);

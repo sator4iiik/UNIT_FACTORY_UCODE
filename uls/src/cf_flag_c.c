@@ -10,7 +10,7 @@ static bool cmpLexographical(t_obj *obj1, t_obj *obj2) {
                 return 0;
         return (*s1 - *s2) > 0 ? true : false;
     }
-    return obj1->st.st_ctime < obj2->st.st_ctime ? ture : false;
+    return obj1->st.st_ctime < obj2->st.st_ctime ? true : false;
 }
 
 void cf_flag_c(t_obj **d, int d_amt, const bool *fl) {

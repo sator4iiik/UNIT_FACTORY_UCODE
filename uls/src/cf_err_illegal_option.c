@@ -2,7 +2,7 @@
 
 void cf_err_illegal_option(char *flags_char) {
     for (int i = 0; flags_char[i]; i++) {
-        if (mx_strchr(FLAG_LIST, flag_char[i]) == 0) {
+        if (mx_strchr(FLAG_LIST, flags_char[i]) == 0) {
             mx_printerr("uls: illegal option --");
             mx_printerr(&flags_char[i]);
             mx_printerr("\n");

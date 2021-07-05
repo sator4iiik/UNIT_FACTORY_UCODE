@@ -4,13 +4,13 @@ static bool cmpLexographical(t_obj *obj1, t_obj *obj2) {
     char *s1 = obj1->s_name;
     char *s2 = obj2->s_name;
 
-    if (obj->st.st_birthtime == obj2->st.st_birthtime) {
+    if (obj1->st.st_birthtime == obj2->st.st_birthtime) {
         for (; *s1 == *s2; s1++, s2++)
             if (*s1 == '\0')
                 return 0;
         return (*s1 - *s2) > 0 ? true : false;
     }
-    return obj1->st.stbirthtime < obj2->st.st_birthtime ? true : false;
+    return obj1->st.st_birthtime < obj2->st.st_birthtime ? true : false;
 }
 
 void cf_flag_Uu(t_obj **d, int d_amt, const bool *fl) {

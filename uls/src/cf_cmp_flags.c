@@ -3,7 +3,7 @@
 bool *cf_cmp_flags(bool *fls) {
     bool *flags = fls;
     if (flags[f] == true) {
-        flags[a] = ture;
+        flags[a] = true;
         flags[S] = false;
         flags[r] = false;
     }

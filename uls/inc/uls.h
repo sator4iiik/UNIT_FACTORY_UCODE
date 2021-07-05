@@ -2,6 +2,7 @@
 
 #include "libmx.h"
 #include <sys/errno.h>
+#include <sys/xattr.h>
 #include <sys/types.h>
 #include <sys/ioctl.h>
 #include <sys/stat.h>
@@ -9,7 +10,7 @@
 #include <dirent.h>
 #include <time.h>
 #include <pwd.h>
-#include <grg.h>
+#include <grp.h>
 
 #define FLAG_LIST "ABCFGHLRSTUacdefghlmnoprtu1@"
 #define INT_MAX   2147483647
@@ -21,7 +22,7 @@
 #define YEL          "\x1B[33m"
 #define BLU          "\x1B[1m\x1B[36m"
 #define MAG          "\x1B[35m"
-#define REST         "\x1B[0m"
+#define RESET        "\x1B[0m"
 #define BLK_F_RED_B  "\x1B[0;30;41m"
 #define BLK_F_CYAN_B "\x1B[0;30;46m"
 #define BLOCK        "\x1B[0;34;46m"
@@ -81,8 +82,8 @@ typedef struct s_spath {
     int amt;
 }              t_path;
 
-typedef stuct s_obj {
-    stuct s_obj **kids;
+typedef struct s_obj {
+    struct s_obj **kids;
     char *path_name;
     char *s_name;
     struct stat st;
@@ -151,9 +152,9 @@ void wc_printTime(struct stat st, bool *fl);
 ////////////////////////OREZNIKOV////////////////////////
 bool *cf_flags_num(int argc, char *argv[]);
 bool *cf_cmp_flags(bool *fls);
-void cf_err_illegal_opion(char *flags_char);
+void cf_err_illegal_option(char *flags_char);
 bool *cf_isatty(bool *fls);
-bool *cf_bool_mainp(int argc, char **argv);
+bool *cf_bool_manip(int argc, char **argv);
 void cf_flags_check(t_data *d, bool *fl);
 void cf_flag_r(t_obj **d, int d_amt, const bool *fl);
 void cf_flag_S(t_obj **d, int d_amt, const bool *fl);
