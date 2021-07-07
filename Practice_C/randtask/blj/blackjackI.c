@@ -3,6 +3,7 @@
  * Этот код выпущен в шутку под публичной Лас-Вегасской лицензцией.
  *
  * (с)2021, Студенческая команда UNIT по блек-джеку, не только Мафии.
+ *              Написана стандартно на IF, ELSE
  *                             ♠ ♦ ♥ ♣
  */////////////////////////////////////////////////////////////////////////////
 
@@ -24,7 +25,8 @@ void cf_printstr(const char *s) {
 
 int cardCount() {
     char cardName[3];
-    cf_printstr("введи название карты: \n");
+    int count = 0;
+    cf_printstr("♦введи название карты: \n");
     scanf("%2s", cardName);
     int val = 0;
     if (cardName[0] == 'K') {
@@ -37,13 +39,18 @@ int cardCount() {
         val = 11;
     } else {
         val = atoi(cardName);
+        if((val < 1) || (10 < val)) {
+            cf_printstr("недопустимое значение, такой карты несуществует");
+        }
     }
     if ((val >= 2) && (7 >= val)) {
+        count++;
         cf_printstr("счетчик увеличился\n");
-    } else if (val >= 10){
+    } else if (val == 10){
+        count--;
         cf_printstr("cчетчик уменьшился ♣\n");
     }
-        // printf("Ценность карты: %d\n", val);
+        printf("\nТекущий счёт: %d\n", count);
     return 0;
 }
 
