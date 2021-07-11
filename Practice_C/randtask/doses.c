@@ -9,3 +9,5 @@ int main(void) {
     letDoses(doses);
     return 0;
 }
+
+// doses[3] == *(doses + 3) == *(3 + doses) == 3[doses];
