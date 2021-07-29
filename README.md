@@ -43,7 +43,7 @@ weight="100%">
 ## Track C
 |Project name|Description|Process|
 |----------------|----------------------------------------------------|---|
-|Marathon C|Learning C|✔|
+|<a href="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/tree/master/Marathon_C" target="_blank">Marathon C</a>|Learning C|✔|
 |Endgame|Create a game on C|✔|
 |Refresh Marathon C|The challenge to refresh all the knowledge you have gained at Marathon C.|✔|
 |Tonus|It is not a classic simple challenge. Here, you need to decipher secret messages toget the next tasks and hints.|✔|
