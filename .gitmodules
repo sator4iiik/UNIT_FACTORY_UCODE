@@ -1,3 +1,6 @@
 [submodule "ENDGAME"]
 	path = ENDGAME
 	url = https://github.com/sator4iiik/ENDGAME
+[submodule "Uchat"]
+	path = Uchat
+	url = https://github.com/UchatTeam/Uchat
