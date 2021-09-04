@@ -51,9 +51,16 @@ weight="100%">
 |<a href="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/tree/master/Pathfinder" target="_blank">Pathfinder</a>|Learn pathfinding algorithms.|✔|
 |<a href="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/tree/master/uls" target="_blank">Uls</a>|Recode the system's utility ls.|✔|
 |<a href="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/tree/master/Ush" target="_blank">Ush</a>|Develop your own shell.|✔|
-|<a href="https://github.com/UchatTeam/Uchat/tree/33183c9ae6ead136adc90ca8f30bb80a7de5df60" target="_blank">Uchat</a>|Create a real-time communication tool using creativity and the whole cycle of Challenge Based Learning framework.|✘|
+|<a href="https://github.com/UchatTeam/Uchat/tree/33183c9ae6ead136adc90ca8f30bb80a7de5df60" target="_blank">Uchat</a>|Create a real-time communication tool using creativity and the whole cycle of Challenge Based Learning framework.|✔|
+
+<hr>
 
 LEGACY UNIT FACTORY
+Опус о том, что это собственно тут делает? Даю очень неочевидный ответ:
+существует, даже более - считаю что Ucode методологически покрыл мертвые зоны
+школы42, но все же s42 это s42. Поскольку одно, это наследование другого
+его появление было только вопросом времени.
+
 
 ## 42 School
 |Project name|Description|Process|
