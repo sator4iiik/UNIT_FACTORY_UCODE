@@ -64,7 +64,7 @@ Cуществует. Даже более - считаю что Ucode метод�
 его появление тут было только вопросом времени. Для себя решил, что и то
 и другое одновременно стоит внимания.
 
-<img src="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/blob/master/.git_pic/highlighting_branches_Holy_Graph.gif?raw=true" width=128>
+<img src="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/blob/master/.git_pic/highlighting_branches_Holy_Graph.gif?raw=true" width=250>
 
 ## 42 School
 |Project name|Description|Process|
