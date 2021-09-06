@@ -56,15 +56,24 @@ weight="100%">
 <hr>
 
 <h6>LEGACY UNIT FACTORY</h6>
-<img src="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/blob/master/.git_pic/42.png?raw=true" width=128>
-<br>
+<p align="left">
+    <a href="https://42.fr" target="_blank">
+        <img src="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/blob/master/.git_pic/42.png?raw=true" width=128>
+    </a>
+    <a href="https://ucode.world/en/" target="_blank">
+        <img src="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/blob/master/.git_pic/highlighting_branches_Holy_Graph.gif?raw=true" height="100px">
+    </a>
+</p>
+
 Опус о том, что это собственно тут делает? Даю очень неочевидный ответ:
 Cуществует. Даже более - считаю что Ucode методологически покрыл мертвые зоны
 школы42, но все же s42 это s42. Поскольку одно, это наследование другого, то
 его появление тут было только вопросом времени. Для себя решил, что и то
 и другое одновременно стоит внимания.
 
-<img src="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/blob/master/.git_pic/highlighting_branches_Holy_Graph.gif?raw=true" width=250>
+
+
+<img src="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/blob/master/.git_pic/map_of_the_Piscine_C.png?raw=true" width=128>
 
 ## 42 School
 |Project name|Description|Process|
