@@ -60,6 +60,7 @@ weight="100%">
     <a href="https://42.fr" target="_blank">
         <img src="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/blob/master/.git_pic/42.png?raw=true" width=128>
 </p>
+<br>
 
 Опус о том, что это собственно тут делает? Даю очень неочевидный ответ:
 Cуществует. Даже более - считаю что Ucode методологически покрыл мертвые зоны
@@ -67,12 +68,8 @@ Cуществует. Даже более - считаю что Ucode метод�
 его появление тут было только вопросом времени. Для себя решил, что и то
 и другое одновременно стоит внимания.
 
-<p align="left">
-    </a>
-    <a href="https://ucode.world/en/" target="_blank">
-        <img src="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/blob/master/.git_pic/highlighting_branches_Holy_Graph.gif?raw=true" height="200px">
-    </a>
-</p>
+
+<img src="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/blob/master/.git_pic/highlighting_branches_Holy_Graph.gif?raw=true" height="200px">
 
 
 <img src="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/blob/master/.git_pic/map_of_the_Piscine_C.png?raw=true" width=200>
