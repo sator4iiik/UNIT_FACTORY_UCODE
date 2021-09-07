@@ -55,7 +55,7 @@ weight="100%">
 
 <hr>
 
-<h6>LEGACY UNIT FACTORY</h6>
+<h6>LEGACY OF UNIT FACTORY</h6>
 
 <img src="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/blob/master/.git_pic/42.png?raw=true" width=128>
 
@@ -78,4 +78,5 @@ Cуществует. Даже более - считаю что Ucode метод�
 ## 42 School
 |Project name|Description|Process|
 |----------------|----------------------------------------------------|---|
-|<a href="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/tree/master/Practice_C/school42" target="_blank">00_Piscine_C</a>|Learning C|✔|
+|<a href="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/tree/master/Practice_C/school42/00_Piscine_C/c00/ex00" target="_blank">00_Piscine_C</a>|Programming start point|✔|
+|<a href="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/tree/master/Practice_C/school42/01_Piscine_C/day02/ex04" target="_blank">01_Piscine_C</a>|Learning C|✔|
