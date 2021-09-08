@@ -1,3 +1,5 @@
+#!/bin/sh
+
 touch .gitignore | 
 echo "
 .DS_Store
