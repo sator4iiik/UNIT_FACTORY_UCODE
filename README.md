@@ -78,5 +78,5 @@ Cуществует. Даже более - считаю что Ucode метод�
 ## 42 School
 |Project name|Description|Process|
 |----------------|----------------------------------------------------|---|
-|<a href="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/tree/master/Practice_C/school42/00_Piscine_C" target="_blank">00_Piscine_C</a>|Programming start point|X|
-|<a href="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/tree/master/Practice_C/school42/01_Piscine_C" target="_blank">01_Piscine_C</a>|Learning C|X|
+|<a href="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/tree/master/42school/00_Piscine_C" target="_blank">00_Piscine_C</a>|Programming start point|X|
+|<a href="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/tree/master/42school/01_Piscine_C/day02/ex04" target="_blank">01_Piscine_C</a>|Learning C|X|
