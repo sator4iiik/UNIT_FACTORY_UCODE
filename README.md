@@ -54,29 +54,30 @@ weight="100%">
 |<a href="https://github.com/UchatTeam/Uchat/tree/33183c9ae6ead136adc90ca8f30bb80a7de5df60" target="_blank">Uchat</a>|Create a real-time communication tool using creativity and the whole cycle of Challenge Based Learning framework.|✔|
 
 <hr>
-
-<h6>LEGACY OF UNIT FACTORY</h6>
-
-<img src="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/blob/master/.git_pic/42.png?raw=true" width=128>
+<h6 align="center">LEGACY OF UNIT FACTORY</h6>
+<hr>
+<p  align="center">
+<img src="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/blob/master/.git_pic/42.png?raw=true" width=128 ></p>
 
 <p>
 Опус о том, что это собственно тут делает? Даю очень неочевидный ответ:
 Cуществует. Даже более - считаю что Ucode методологически покрыл мертвые зоны
 школы42, но все же s42 это s42. Поскольку одно, это наследование другого, то
 его появление тут было только вопросом времени. Для себя решил, что и то
-и другое одновременно стоит внимания.</p>
+и другое одновременно стоит внимания. Дабы не плодить репозитории, это находится здесь, так как оно неотделимо друг от друга.</p>
 
 </br>
 
-<img src="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/blob/master/.git_pic/highlighting_branches_Holy_Graph.gif?raw=true" height="220px">
-
+<div align="center">
+    <img src="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/blob/master/.git_pic/highlighting_branches_Holy_Graph.gif?raw=true" height="220px">
 
 <img src="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/blob/master/.git_pic/map_of_the_Piscine_C.png?raw=true" width=200>
+</div>
 
 </br>
 
 ## 42 School
 |Project name|Description|Process|
 |----------------|----------------------------------------------------|---|
-|<a href="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/tree/master/42school/00_Piscine_C" target="_blank">00_Piscine_C</a>|Programming start point|X|
+|<a href="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/tree/master/42school/00_Piscine_C" target="_blank">00_Piscine_C</a>| Pool of C, Programming start point|X|
 |<a href="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/tree/master/42school/01_Piscine_C/day02/ex04" target="_blank">01_Piscine_C</a>|Learning C|X|
