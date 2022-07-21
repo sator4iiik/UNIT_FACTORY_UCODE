@@ -6,7 +6,7 @@
 /*   By: oreznikov <oreznikov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/08 12:33:06 by oreznikov         #+#    #+#             */
-/*   Updated: 2022/01/08 12:49:33 by oreznikov        ###   ########.fr       */
+/*   Updated: 2022/02/13 20:31:13 by oreznikov        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,10 @@ void ft_putchar(char c){
 }
 
 void ft_print_comb2(void){
-    char a;
+    int  a;
     char b;
 
-    a = '0' -1;
-    while(++a <= '9'){
+    for(a = 0; a <= 9; ++a){
         b = a;
         while(++b <= '9'){
             if(a != '0' || b != '1'){
@@ -32,11 +31,15 @@ void ft_print_comb2(void){
             }
             ft_putchar(a);
             ft_putchar(b);
+            ft_putchar(' ');
+            ft_putchar(a);
+            ft_putchar(b);
         }
     }
 }
 
 int main(void){
-    ft_print_comb2();
-    ft_putchar('\n');
+        ft_print_comb2();
+        ft_putchar('\n');
+    return 0;
 }

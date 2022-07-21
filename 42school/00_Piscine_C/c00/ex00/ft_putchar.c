@@ -6,7 +6,7 @@
 /*   By: oreznikov <oreznikov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 22:54:22 by oreznikov         #+#    #+#             */
-/*   Updated: 2021/10/24 22:54:55 by oreznikov        ###   ########.fr       */
+/*   Updated: 2022/01/08 13:12:35 by oreznikov        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,6 @@ void ft_putchar(char c) {
 
 // int main (void) {
 //     ft_putchar('f');
-// 	ft_putchar('\n');
+//     ft_putchar('\n');
+// return 0;
 // }

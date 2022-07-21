@@ -6,7 +6,7 @@
 /*   By: oreznikov <oreznikov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/08 11:16:30 by oreznikov         #+#    #+#             */
-/*   Updated: 2022/01/08 11:25:27 by oreznikov        ###   ########.fr       */
+/*   Updated: 2022/01/08 13:13:24 by oreznikov        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ void ft_is_negative(int n){
 }
 
 // int main(void){
-//     ft_is_negative(42);
-//     ft_putchar('\n');
+//      ft_is_negative(42);
+//      ft_putchar('\n');
+//     return 0;
 // }

@@ -6,7 +6,7 @@
 /*   By: oreznikov <oreznikov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/08 11:36:54 by oreznikov         #+#    #+#             */
-/*   Updated: 2022/01/08 12:32:50 by oreznikov        ###   ########.fr       */
+/*   Updated: 2022/02/13 18:33:23 by oreznikov        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ void ft_print_comb(void){
     }
 
 int main(void){
-    ft_print_comb();
-    ft_putchar('\n');
+        ft_print_comb();
+        ft_putchar('\n');
+    return 0;
 }

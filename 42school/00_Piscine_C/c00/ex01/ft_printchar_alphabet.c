@@ -6,7 +6,7 @@
 /*   By: oreznikov <oreznikov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/08 01:52:27 by oreznikov         #+#    #+#             */
-/*   Updated: 2022/01/08 11:03:40 by oreznikov        ###   ########.fr       */
+/*   Updated: 2022/01/08 13:14:01 by oreznikov        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,5 @@ void ft_printchar_alphabet(void) {
 // int main(void) {
 //     ft_printchar_alphabet();
 //     ft_putchar('\n');
+// return 0;
 // }
