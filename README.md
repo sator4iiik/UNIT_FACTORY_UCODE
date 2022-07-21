@@ -17,7 +17,7 @@ weight="100%">
 >хорошо кивал головой, теперь
 >учусь в ~~стенфорде~~"
 
-<img src="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/blob/master/.git_pic/why.jpeg">
+<img align="center" src="https://github.com/sator4iiik/UNIT_FACTORY_UCODE/blob/master/.git_pic/why.jpeg" height="100px">
 
 
 Это было почти год назад, много воды
